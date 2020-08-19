@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Left bit shouldn't be dominant (responsibility)
+// BitManager makes more sense 
 public class LeftBit : MonoBehaviour
 {
+    // redundant 
     public GameObject leftBit;
+    
     public GameObject rightBit;
-    [SerializeField] private bool state = true; 
+    [SerializeField] private bool state = false; 
 
     // Array of these left-right bit pairs? 
     // Or individual attachments. 
@@ -15,7 +19,8 @@ public class LeftBit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        leftBit.SetActive(state); 
+        leftBit.SetActive(state);
+        rightBit.SetActive(!state); 
     }
     void FlipBit()
     {

@@ -65,6 +65,8 @@
     <Compile Include="Assets\Scripts\LeftBit.cs" />
     <Compile Include="Assets\Scripts\Animations\Ramp.cs" />
     <Compile Include="Assets\Scripts\MachineBuilder.cs" />
+    <Compile Include="Assets\Scripts\Operand.cs" />
+    <Compile Include="Assets\Scripts\EndPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

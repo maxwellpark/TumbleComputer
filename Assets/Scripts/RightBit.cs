@@ -16,7 +16,7 @@ public class RightBit : MonoBehaviour
     void Start()
     {
         // change to gameObject.setActive
-        rightBit.SetActive(state); 
+        //rightBit.SetActive(state); 
     }
     void FlipBit()
     {
