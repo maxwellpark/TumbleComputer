@@ -24,14 +24,14 @@ public class Ramp : MonoBehaviour
     private void Start()
     {
         //ball = GameObject.Find("Marble"); 
-        _renderer.material.color = Color.black; 
+        //_renderer.material.color = Color.black; 
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Marble")
         {
-            ChangeState(); 
+            //ChangeState(); 
         }
     }
 
