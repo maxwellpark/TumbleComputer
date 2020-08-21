@@ -30,6 +30,7 @@ public class RampAnimation : MonoBehaviour
             yield return new WaitForSeconds(timeDelay); 
         }
 
+        //GetComponentInParent<>
     }
 
     private void Start()
@@ -47,7 +48,10 @@ public class RampAnimation : MonoBehaviour
     {
         if (collision.transform.tag == "Marble")
         {
-            gameObject.transform.Rotate(new Vector3(0f, 0f, 90f)); 
+            //gameObject.transform.Rotate(new Vector3(0f, 0f, 90f)); 
+            ramp.transform.Rotate(new Vector3(0f, 0f, 90f)); 
+
+            // local or world axis? 
 
         }
         //StartCoroutine(GradualRotation(gameObject.transform)); 
