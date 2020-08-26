@@ -55,18 +55,20 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Sink.cs" />
+    <Compile Include="Assets\Scripts\Components\Sink.cs" />
     <Compile Include="Assets\Scripts\MachineManager.cs" />
-    <Compile Include="Assets\Scripts\Bit.cs" />
-    <Compile Include="Assets\Scripts\RightBit.cs" />
+    <Compile Include="Assets\Scripts\Components\Bit.cs" />
+    <Compile Include="Assets\Scripts\Components\RightBit.cs" />
+    <Compile Include="Assets\Scripts\Operand.cs" />
     <Compile Include="Assets\Scripts\Animations\Marble.cs" />
     <Compile Include="Assets\Scripts\BitManager.cs" />
     <Compile Include="Assets\Scripts\Animations\RampAnimation.cs" />
-    <Compile Include="Assets\Scripts\LeftBit.cs" />
+    <Compile Include="Assets\Scripts\Components\LeftBit.cs" />
     <Compile Include="Assets\Scripts\Animations\Ramp.cs" />
     <Compile Include="Assets\Scripts\MachineBuilder.cs" />
-    <Compile Include="Assets\Scripts\Operand.cs" />
-    <Compile Include="Assets\Scripts\EndPoint.cs" />
+    <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
+    <Compile Include="Assets\Scripts\Components\Crossover.cs" />
+    <Compile Include="Assets\Scripts\OutputReport.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
