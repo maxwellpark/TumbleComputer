@@ -56,19 +56,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Components\Sink.cs" />
-    <Compile Include="Assets\Scripts\MachineManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\MachineManager.cs" />
     <Compile Include="Assets\Scripts\Components\Bit.cs" />
     <Compile Include="Assets\Scripts\Components\RightBit.cs" />
     <Compile Include="Assets\Scripts\Operand.cs" />
-    <Compile Include="Assets\Scripts\Animations\Marble.cs" />
-    <Compile Include="Assets\Scripts\BitManager.cs" />
-    <Compile Include="Assets\Scripts\Animations\RampAnimation.cs" />
+    <Compile Include="Assets\Scripts\Components\Crossover.cs" />
+    <Compile Include="Assets\Scripts\Animators\Marble.cs" />
+    <Compile Include="Assets\Scripts\Managers\BitManager.cs" />
+    <Compile Include="Assets\Scripts\OutputReport.cs" />
+    <Compile Include="Assets\Scripts\Animators\RampAnimation.cs" />
     <Compile Include="Assets\Scripts\Components\LeftBit.cs" />
-    <Compile Include="Assets\Scripts\Animations\Ramp.cs" />
+    <Compile Include="Assets\Scripts\Animators\Ramp.cs" />
     <Compile Include="Assets\Scripts\MachineBuilder.cs" />
     <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
-    <Compile Include="Assets\Scripts\Components\Crossover.cs" />
-    <Compile Include="Assets\Scripts\OutputReport.cs" />
+    <Compile Include="Assets\Scripts\Managers\MarbleManager.cs" />
+    <Compile Include="Assets\Scripts\Animators\SlopeAnimator.cs" />
+    <Compile Include="Assets\Constants\ComponentConstants.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
