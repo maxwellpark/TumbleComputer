@@ -8,8 +8,19 @@ public class SlopeAnimator : MonoBehaviour
     // better name?
     public GameObject slopeHinge;
 
+    // does this explicit declaration
+    // make it more readable?
+    Transform slopeTransform; 
+
     // move this to const class?
-    float zDegrees = 90f; 
+    float zDegrees = 90f;
+
+    float startingZ;
+    float targetZ;
+    float zGap = 40f;
+
+    bool lowering;
+    bool raising; 
 
     // flag for whether its going 
     // left or right?
@@ -18,7 +29,10 @@ public class SlopeAnimator : MonoBehaviour
 
     void Start()
     {
-        
+        slopeTransform = transform.parent.transform;
+        startingZ = transform.rotation.z;
+        //targetZ = transform.rotation.z - zGap; 
+        targetZ = -60f; 
     }
 
     void TiltSlope()
@@ -41,7 +55,7 @@ public class SlopeAnimator : MonoBehaviour
         // make this a const. 
         // and dynamicv
         //float delay = timer / 100f; 
-        float delay = 0.01f; 
+        float delay = 0.01f;
 
         while (timer > 0)
         {
@@ -50,6 +64,14 @@ public class SlopeAnimator : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
 
+        //while (true)
+        //{
+        //    if (transform.rotation.z == targetZ)
+        //    {
+
+        //    }
+        //}
+
 
     }
 
@@ -57,13 +79,47 @@ public class SlopeAnimator : MonoBehaviour
     {
         if (collision.transform.tag == "Marble")
         {
-            TiltSlope(); 
+            //TiltSlope(); 
+            lowering = true;
         }
+    }
+
+    void ResetRotation(float z)
+    {
+        transform.rotation = Quaternion.Euler(0f, 0f, z);
     }
 
 
     void Update()
     {
-        
+        // could ncap. 
+        if (lowering)
+        {
+            if (slopeTransform.rotation.z >= targetZ)
+            {
+                Debug.Log("Reached target after lowering."); 
+                slopeTransform.Rotate(new Vector3(0f, 0f, -ComponentConstants.tiltIncrement)); 
+            }
+            else 
+            {
+                ResetRotation(startingZ); 
+                lowering = false;
+                //raising = true; 
+            }
+        }
+        // range is dependent on direction slope is facing?
+        else if (raising)
+        {
+            if (slopeTransform.rotation.z <= startingZ)
+            {
+                Debug.Log("Reached target after raising.");
+                slopeTransform.Rotate(new Vector3(0f, 0f, ComponentConstants.tiltIncrement));
+            }
+            else
+            {
+                ResetRotation(startingZ); 
+                raising = false; 
+            }
+        }
     }
 }

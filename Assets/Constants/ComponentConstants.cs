@@ -12,5 +12,7 @@ public class ComponentConstants : MonoBehaviour
 {
     // multiples of 4 across the board? 
     public static float tiltDuration = 90f;
-    public static float tiltIncrement = 4f; 
+
+    // confusing name? 
+    public static float tiltIncrement = 0.1f; 
 }
