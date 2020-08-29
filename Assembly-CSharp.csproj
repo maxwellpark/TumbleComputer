@@ -58,20 +58,20 @@
     <Compile Include="Assets\Scripts\Components\Sink.cs" />
     <Compile Include="Assets\Scripts\Managers\MachineManager.cs" />
     <Compile Include="Assets\Scripts\Components\Bit.cs" />
+    <Compile Include="Assets\Scripts\Animators\SlopeAnimator.cs" />
     <Compile Include="Assets\Scripts\Components\RightBit.cs" />
     <Compile Include="Assets\Scripts\Operand.cs" />
     <Compile Include="Assets\Scripts\Components\Crossover.cs" />
     <Compile Include="Assets\Scripts\Animators\Marble.cs" />
     <Compile Include="Assets\Scripts\Managers\BitManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\MarbleManager.cs" />
     <Compile Include="Assets\Scripts\OutputReport.cs" />
     <Compile Include="Assets\Scripts\Animators\RampAnimation.cs" />
     <Compile Include="Assets\Scripts\Components\LeftBit.cs" />
     <Compile Include="Assets\Scripts\Animators\Ramp.cs" />
     <Compile Include="Assets\Scripts\MachineBuilder.cs" />
-    <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
-    <Compile Include="Assets\Scripts\Managers\MarbleManager.cs" />
-    <Compile Include="Assets\Scripts\Animators\SlopeAnimator.cs" />
     <Compile Include="Assets\Constants\ComponentConstants.cs" />
+    <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -634,6 +634,18 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
