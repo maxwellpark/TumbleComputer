@@ -58,6 +58,7 @@
     <Compile Include="Assets\Scripts\Components\Sink.cs" />
     <Compile Include="Assets\Scripts\Managers\MachineManager.cs" />
     <Compile Include="Assets\Scripts\Components\Bit.cs" />
+    <Compile Include="Assets\Scripts\ExternalProgramParser.cs" />
     <Compile Include="Assets\Scripts\Animators\SlopeAnimator.cs" />
     <Compile Include="Assets\Scripts\Components\RightBit.cs" />
     <Compile Include="Assets\Scripts\Operand.cs" />
@@ -72,7 +73,7 @@
     <Compile Include="Assets\Scripts\MachineBuilder.cs" />
     <Compile Include="Assets\Constants\ComponentConstants.cs" />
     <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
-    <Compile Include="Assets\Scripts\ExternalProgramParser.cs" />
+    <Compile Include="Assets\Scripts\Components\Toggle.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
