@@ -55,18 +55,24 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Sink.cs" />
-    <Compile Include="Assets\Scripts\MachineManager.cs" />
-    <Compile Include="Assets\Scripts\Bit.cs" />
-    <Compile Include="Assets\Scripts\RightBit.cs" />
-    <Compile Include="Assets\Scripts\Animations\Marble.cs" />
-    <Compile Include="Assets\Scripts\BitManager.cs" />
-    <Compile Include="Assets\Scripts\Animations\RampAnimation.cs" />
-    <Compile Include="Assets\Scripts\LeftBit.cs" />
-    <Compile Include="Assets\Scripts\Animations\Ramp.cs" />
-    <Compile Include="Assets\Scripts\MachineBuilder.cs" />
+    <Compile Include="Assets\Scripts\Components\Sink.cs" />
+    <Compile Include="Assets\Scripts\Managers\MachineManager.cs" />
+    <Compile Include="Assets\Scripts\Components\Bit.cs" />
+    <Compile Include="Assets\Scripts\Animators\SlopeAnimator.cs" />
+    <Compile Include="Assets\Scripts\Components\RightBit.cs" />
     <Compile Include="Assets\Scripts\Operand.cs" />
-    <Compile Include="Assets\Scripts\EndPoint.cs" />
+    <Compile Include="Assets\Scripts\Components\Crossover.cs" />
+    <Compile Include="Assets\Scripts\Animators\Marble.cs" />
+    <Compile Include="Assets\Scripts\Managers\BitManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\MarbleManager.cs" />
+    <Compile Include="Assets\Scripts\OutputReport.cs" />
+    <Compile Include="Assets\Scripts\Animators\RampAnimation.cs" />
+    <Compile Include="Assets\Scripts\Components\LeftBit.cs" />
+    <Compile Include="Assets\Scripts\Animators\Ramp.cs" />
+    <Compile Include="Assets\Scripts\MachineBuilder.cs" />
+    <Compile Include="Assets\Constants\ComponentConstants.cs" />
+    <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
+    <Compile Include="Assets\Scripts\ExternalProgramParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -609,6 +615,15 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -623,6 +638,9 @@
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
