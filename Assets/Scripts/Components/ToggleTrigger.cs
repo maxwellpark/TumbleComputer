@@ -17,7 +17,13 @@ public class ToggleTrigger : MonoBehaviour
     {
         if (collision.transform.tag == "Marble")
         {
+            StartCoroutine(ToggleDelay()); 
             toggle.ToggleState(); 
         }
+    }
+
+    IEnumerator ToggleDelay()
+    {
+        yield return new WaitForSeconds(1); 
     }
 }

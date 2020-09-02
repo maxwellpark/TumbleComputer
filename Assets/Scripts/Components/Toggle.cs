@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// we need negative z rot. to flip right (the initial flip) 
+//
+// change the anchor pt on the prefab to invert this 
+// and have it intuitive (positive)
 public class Toggle : MonoBehaviour
 {
 	public GameObject trigger0; // right 
@@ -35,6 +39,7 @@ public class Toggle : MonoBehaviour
 		// flip bit 
 		//
 		state = !state;
+		MachineManager.decimalTotal += state ? 1 : -1; 
 
 		// before or after updating state value?
 		//
@@ -58,7 +63,7 @@ public class Toggle : MonoBehaviour
 	// justify clarity of movement...
 	void SuddenRotation(bool state)
     {
-		transform.eulerAngles += state ? new Vector3(0f, 0f, zDelta) : new Vector3(0f, 0f, -zDelta); 
+		transform.eulerAngles += state ? new Vector3(0f, 0f, -zDelta) : new Vector3(0f, 0f, zDelta); 
     }
 
     void Update()
