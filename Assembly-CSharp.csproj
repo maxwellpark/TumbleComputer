@@ -76,6 +76,8 @@
     <Compile Include="Assets\Constants\ComponentConstants.cs" />
     <Compile Include="Assets\Scripts\Components\Toggle.cs" />
     <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
+    <Compile Include="Assets\Scripts\Node.cs" />
+    <Compile Include="Assets\Scripts\UI\InstallationMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

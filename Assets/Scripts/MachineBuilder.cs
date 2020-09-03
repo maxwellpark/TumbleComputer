@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class MachineBuilder : MonoBehaviour
 {
+    public GameObject nodePrefab; 
     public GameObject togglePrefab; 
     
     // top row always needs to be 6? 
     // row below is always 3 + top row? (9)
+    //
+    // is no. of nodes just the active ones?
+    // (that can have components attached) 
     [SerializeField] int numberOfNodes;
+    int defaultNumberOfNodes = 100;
+
+    int levels = 6;
+    int nodesPerLevel = 12;
+    float xSpacing = 3f;
+    float ySpacing = 3f; 
     
     // stores type and position of components 
     public static GameObject[] componentObjects;
@@ -38,16 +48,22 @@ public class MachineBuilder : MonoBehaviour
     int rampspacing; //? redundant?
     int rampangle; // flipped left/right parts 
 
+
     Vector2 entrypos;
     Vector2 sinkpos;
 
     // coords should be such that they are 
     // right in the centre of the corresponding node 
     Vector2 testKey = new Vector2(16f, 16f);
-    GameObject testValue;  
+    GameObject testValue;
 
     void Start()
     {
+        if (numberOfNodes <= 0)
+        {
+            numberOfNodes = defaultNumberOfNodes;
+        }
+
         componentContainer = new Dictionary<Vector2, GameObject>();
         testValue = togglePrefab;
 
@@ -71,6 +87,42 @@ public class MachineBuilder : MonoBehaviour
             component.transform.parent = transform.parent.transform;
             component.transform.position = entry.Key; 
             
+        }
+    }
+    
+    // separate methods for first and second row?
+    // (those that have different pattern) 
+    void SetupNodes()
+    {
+        for (int i = 0; i < levels; i++)
+        {
+            float xPos = 3f;
+            float yPos = 0f; 
+
+            // first two levels are different 
+            // if (i != 0 && i != 1) 
+            if (1 == 1)
+            {
+                for (int j = 0; j < nodesPerLevel; j++)
+                {
+                    GameObject node = Instantiate(nodePrefab);
+                    node.transform.parent = transform; // might have a node container later...
+
+                    // does this affect local pos?
+                    node.transform.position = new Vector2(xPos, yPos);
+
+                    // These become the next node's coordinates  
+                    xPos += xSpacing;
+                    yPos += ySpacing;
+                }
+
+            }
+            else
+            {
+                // less nodes than the rest. 
+                // spacing is different (make separate variable or just manipulate here) 
+                // (remember to restore sparing var. afterwards) 
+            }
         }
     }
 
