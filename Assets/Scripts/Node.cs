@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 // rename to peg? 
-public class Node : MonoBehaviour
+public class Node : MonoBehaviour, IPointerClickHandler
 {
     // prefab array/dict?
 
@@ -12,6 +14,9 @@ public class Node : MonoBehaviour
     // distinct from manager? (editor readable)
     public GameObject machineBuilder;
     MachineBuilder builder;
+
+    GameObject attachedComponent; // give node child empty then attach?
+
 
     public GameObject installationMenu;
     InstallationMenu menu;
@@ -27,7 +32,7 @@ public class Node : MonoBehaviour
     private void Start()
     {
         menu = installationMenu.GetComponent<InstallationMenu>();
-        button = GetComponent<Button>(); 
+        //button = GetComponent<Button>(); 
         nodePosition = new Vector2(transform.position.x, transform.position.y);
     }
 
@@ -37,7 +42,7 @@ public class Node : MonoBehaviour
     {
         // this method should live in the MB class 
         // Check if component exists on this node  
-        if (MachineBuilder.componentContainer.ContainsKey(nodePosition))
+        if (ComponentIsAttached())
         {
             Destroy(MachineBuilder.componentContainer[nodePosition]); 
             MachineBuilder.componentContainer.Remove(nodePosition);
@@ -69,5 +74,40 @@ public class Node : MonoBehaviour
         Button button = GetComponent<Button>();
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(delegate { menu.ToggleMenu(gameObject); });
+    }
+
+    // Check if there is already a component at this node 
+    private bool ComponentIsAttached()
+    {
+        return MachineBuilder.componentContainer.ContainsKey(nodePosition) ? true : false;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        // Left click opens a menu from which 
+        // a new component can be selected
+        // (line endings?)
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            menu.ToggleMenu(gameObject); 
+        }
+
+        // Right click reverses the direction 
+        // of the currently attached component
+        else if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            if (ComponentIsAttached())
+            {
+                // flip ramp z rotation by 180 degrees
+                // bit z rotation by 90 degrees 
+                // ... 
+
+                // need reference to attached component? 
+            }
+        }
+
+        // flow pos. 
+        throw new System.NotImplementedException();
+
     }
 }
