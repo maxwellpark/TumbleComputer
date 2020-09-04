@@ -32,7 +32,7 @@ public class InstallationMenu : MonoBehaviour
         // (see MB logic) 
     }
 
-    void ToggleMenu(GameObject _node)
+    public void ToggleMenu(GameObject _node)
     {
         // Negate active and set to that(rw) 
         gameObject.SetActive(!gameObject.activeSelf);
