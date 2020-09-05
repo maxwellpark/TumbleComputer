@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Animators\SlopeAnimator.cs" />
     <Compile Include="Assets\Scripts\Components\RightBit.cs" />
     <Compile Include="Assets\Scripts\Operand.cs" />
+    <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\Components\Crossover.cs" />
     <Compile Include="Assets\Scripts\Animators\Marble.cs" />
     <Compile Include="Assets\Scripts\Managers\BitManager.cs" />
@@ -73,11 +74,14 @@
     <Compile Include="Assets\Scripts\Components\LeftBit.cs" />
     <Compile Include="Assets\Scripts\Animators\Ramp.cs" />
     <Compile Include="Assets\Scripts\MachineBuilder.cs" />
+    <Compile Include="Assets\Scripts\UI\InstallationMenu.cs" />
     <Compile Include="Assets\Constants\ComponentConstants.cs" />
     <Compile Include="Assets\Scripts\Components\Toggle.cs" />
     <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
-    <Compile Include="Assets\Scripts\Node.cs" />
-    <Compile Include="Assets\Scripts\UI\InstallationMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\DragNDrop.cs" />
+    <Compile Include="Assets\Scripts\UI\InstallationManager.cs" />
+    <Compile Include="Assets\Scripts\UI\ComponentInstallationMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\InstallationButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
