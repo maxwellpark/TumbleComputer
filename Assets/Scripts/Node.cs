@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+// prevent installing/altering components while machine is running? 
+
 // rename to peg? 
 public class Node : MonoBehaviour, IPointerClickHandler
 {
@@ -18,6 +20,8 @@ public class Node : MonoBehaviour, IPointerClickHandler
 
     GameObject attachedComponent; // give node child empty then attach?
 
+    [SerializeField] private bool occupied; 
+
 
     //public GameObject installationMenu;
     //InstallationMenu menu;
@@ -25,8 +29,10 @@ public class Node : MonoBehaviour, IPointerClickHandler
     // parent or child? 
 
     public GameObject slopePrefab;
-    Vector2 nodePosition; 
 
+    Vector2 nodePosition;
+    Vector2 newComponentPosition;
+    float yDelta = 0.75f; // but will vary depending on comp. type 
 
 
     private void Start()
@@ -35,29 +41,39 @@ public class Node : MonoBehaviour, IPointerClickHandler
         //button = GetComponent<Button>(); 
         //AddListener();
         nodePosition = new Vector2(transform.position.x, transform.position.y);
-
+        newComponentPosition = new Vector2(transform.position.x, transform.position.y + yDelta);
+         
     }
 
     // port to installationmenu script?
     // 
-    private void InstallComponent(GameObject _prefab)
+    private void InstallComponent()
     {
-        Debug.Log("InstallComponent"); 
-        // this method should live in the MB class 
-        // Check if component exists on this node  
-        if (ComponentIsAttached())
+        if (InstallationManager.prefabBeingInstalled != null)
         {
-            Destroy(MachineBuilder.componentContainer[nodePosition]); 
-            MachineBuilder.componentContainer.Remove(nodePosition);
+            Debug.Log("InstallComponent"); 
+            // this method should live in the MB class 
+            // Check if component exists on this node  
+            if (ComponentIsAttached())
+            {
+                Destroy(MachineBuilder.componentContainer[nodePosition]); 
+                MachineBuilder.componentContainer.Remove(nodePosition);
+                // we need to destroy the attached component 
+                // can we get reference without using MachineBuilder?
+                // & 
+            }
+
+            //GameObject newComponent = Instantiate(InstallationManager.prefabBeingInstalled);
+            attachedComponent = Instantiate(InstallationManager.prefabBeingInstalled);
+
+            // either parent to node or machine top-level
+            // hierarchy may be less readable with node parent. 
+            attachedComponent.transform.parent = board.transform;
+            attachedComponent.transform.position = newComponentPosition; 
+            //newComponent.transform.localPosition = Vector2.one;
+        
+            occupied = true; 
         }
-
-        GameObject newComponent = Instantiate(InstallationManager.currentlyInstallingPrefab);
-
-        // either parent to node or machine top-level
-        // hierarchy may be less readable with node parent. 
-        newComponent.transform.parent = board.transform;
-        newComponent.transform.position = nodePosition; 
-        //newComponent.transform.localPosition = Vector2.one;
     }
 
     private GameObject GetCorrespondingPrefab(HardwareComponent component)
@@ -80,7 +96,7 @@ public class Node : MonoBehaviour, IPointerClickHandler
     //    button.onClick.RemoveAllListeners();
     //    button.onClick.AddListener(delegate 
     //    { 
-    //        InstallComponent(InstallationManager.currentlyInstallingPrefab); 
+    //        InstallComponent(InstallationManager.prefabBeingInstalled); 
     //    });
     //}
 
@@ -90,17 +106,21 @@ public class Node : MonoBehaviour, IPointerClickHandler
         return MachineBuilder.componentContainer.ContainsKey(nodePosition);
     }
 
+    private void FlipComponent()
+    {
+        Debug.Log("Flipping component"); 
+        attachedComponent.transform.eulerAngles += new Vector3(0f, 0f, 180f); 
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("OnPointerClick");
         // Left click opens a menu from which 
         // a new component can be selected
         // (line endings?)
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            Debug.Log("InstallComponent");
             //menu.ToggleMenu(gameObject); 
-            InstallComponent(InstallationManager.currentlyInstallingPrefab);
+            InstallComponent();
 
         }
 
@@ -108,14 +128,14 @@ public class Node : MonoBehaviour, IPointerClickHandler
         // of the currently attached component
         else if (eventData.button == PointerEventData.InputButton.Right)
         {
-            if (ComponentIsAttached())
+            if (occupied)
             {
-                Debug.Log("Component already attached to node");
                 // flip ramp z rotation by 180 degrees
                 // bit z rotation by 90 degrees 
                 // ... 
 
                 // need reference to attached component? 
+                FlipComponent(); 
             }
         }
 

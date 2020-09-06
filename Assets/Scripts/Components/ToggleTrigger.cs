@@ -4,6 +4,7 @@ using UnityEngine;
 
 // amalgamate with parent script? 
 // 
+// just get a reference to the trigger gameobject* 
 public class ToggleTrigger : MonoBehaviour
 {
     Toggle toggle; 

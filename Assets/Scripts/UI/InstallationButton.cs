@@ -45,8 +45,8 @@ public class InstallationButton : MonoBehaviour
         Debug.Log("ActivateButton");
         SetAllButtonsInteractable();
         button.interactable = false;
-        InstallationManager.currentlyInstallingPrefab = componentPrefab;
-        Debug.Log(InstallationManager.currentlyInstallingPrefab); 
+        InstallationManager.prefabBeingInstalled = componentPrefab;
+        Debug.Log(InstallationManager.prefabBeingInstalled); 
     }
 
     // explain this method 
@@ -63,7 +63,7 @@ public class InstallationButton : MonoBehaviour
     //    clickedButton.interactable = false;
 
     //    // Set the prefab that will be instantiated at a chosen node 
-    //    InstallationManager.currentlyInstallingPrefab = componentPrefab; 
+    //    InstallationManager.prefabBeingInstalled = componentPrefab; 
 
 
     //}
