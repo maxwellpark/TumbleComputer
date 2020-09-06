@@ -8,6 +8,7 @@ using UnityEngine.UI;
 // rename to peg? 
 public class Node : MonoBehaviour, IPointerClickHandler
 {
+    public GameObject board; 
     // prefab array/dict?
 
     // separate gameObj for builder?
@@ -18,11 +19,10 @@ public class Node : MonoBehaviour, IPointerClickHandler
     GameObject attachedComponent; // give node child empty then attach?
 
 
-    public GameObject installationMenu;
-    InstallationMenu menu;
+    //public GameObject installationMenu;
+    //InstallationMenu menu;
 
     // parent or child? 
-    Button button; 
 
     public GameObject slopePrefab;
     Vector2 nodePosition; 
@@ -31,15 +31,18 @@ public class Node : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
-        menu = installationMenu.GetComponent<InstallationMenu>();
+        //menu = installationMenu.GetComponent<InstallationMenu>();
         //button = GetComponent<Button>(); 
+        //AddListener();
         nodePosition = new Vector2(transform.position.x, transform.position.y);
+
     }
 
     // port to installationmenu script?
     // 
     private void InstallComponent(GameObject _prefab)
     {
+        Debug.Log("InstallComponent"); 
         // this method should live in the MB class 
         // Check if component exists on this node  
         if (ComponentIsAttached())
@@ -48,11 +51,13 @@ public class Node : MonoBehaviour, IPointerClickHandler
             MachineBuilder.componentContainer.Remove(nodePosition);
         }
 
-        Instantiate(slopePrefab);
+        GameObject newComponent = Instantiate(InstallationManager.currentlyInstallingPrefab);
 
         // either parent to node or machine top-level
-        // hierarchy may be less readable with node parent. z
-        slopePrefab.transform.parent = transform;
+        // hierarchy may be less readable with node parent. 
+        newComponent.transform.parent = board.transform;
+        newComponent.transform.position = nodePosition; 
+        //newComponent.transform.localPosition = Vector2.one;
     }
 
     private GameObject GetCorrespondingPrefab(HardwareComponent component)
@@ -69,27 +74,34 @@ public class Node : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    private void SetupListener()
-    {
-        Button button = GetComponent<Button>();
-        button.onClick.RemoveAllListeners();
-        button.onClick.AddListener(delegate { menu.ToggleMenu(gameObject); });
-    }
+    //private void AddListener()
+    //{
+    //    Button button = GetComponent<Button>();
+    //    button.onClick.RemoveAllListeners();
+    //    button.onClick.AddListener(delegate 
+    //    { 
+    //        InstallComponent(InstallationManager.currentlyInstallingPrefab); 
+    //    });
+    //}
 
     // Check if there is already a component at this node 
     private bool ComponentIsAttached()
     {
-        return MachineBuilder.componentContainer.ContainsKey(nodePosition) ? true : false;
+        return MachineBuilder.componentContainer.ContainsKey(nodePosition);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log("OnPointerClick");
         // Left click opens a menu from which 
         // a new component can be selected
         // (line endings?)
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            menu.ToggleMenu(gameObject); 
+            Debug.Log("InstallComponent");
+            //menu.ToggleMenu(gameObject); 
+            InstallComponent(InstallationManager.currentlyInstallingPrefab);
+
         }
 
         // Right click reverses the direction 
@@ -98,6 +110,7 @@ public class Node : MonoBehaviour, IPointerClickHandler
         {
             if (ComponentIsAttached())
             {
+                Debug.Log("Component already attached to node");
                 // flip ramp z rotation by 180 degrees
                 // bit z rotation by 90 degrees 
                 // ... 
@@ -106,8 +119,6 @@ public class Node : MonoBehaviour, IPointerClickHandler
             }
         }
 
-        // flow pos. 
-        throw new System.NotImplementedException();
-
+        //throw new System.NotImplementedException();
     }
 }

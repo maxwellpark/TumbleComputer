@@ -26,15 +26,15 @@ public class OutputReport : MonoBehaviour
         
     }
 
-    private void OnGUI()
-    {
-        GUI.Label(outputLabel, $"Total: {MachineManager.decimalTotal}"); 
-        // binary rep.
-        // estimation of execution time remaining? 
+    //private void OnGUI()
+    //{
+    //    GUI.Label(outputLabel, $"Total: {MachineManager.decimalTotal}"); 
+    //    // binary rep.
+    //    // estimation of execution time remaining? 
 
-        if (GUI.Button(new Rect(10, 10, 150, 100), "I am a button"))
-        {
-            print("You clicked the button!");
-        }
-    }
+    //    if (GUI.Button(new Rect(10, 10, 150, 100), "I am a button"))
+    //    {
+    //        print("You clicked the button!");
+    //    }
+    //}
 }
