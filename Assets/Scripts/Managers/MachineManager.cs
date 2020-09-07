@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering;
 
 // rename to program manager?
 // then have another module called StateManager 
@@ -14,7 +15,9 @@ public class MachineManager : MonoBehaviour
     // toggleContainer? 
     public GameObject[] toggles;
     public static int binaryTotal;
-    public static int decimalTotal; 
+    public static int decimalTotal;
+
+    private int fps = 60; 
 
 
     // init spawning logic goes here?
@@ -22,7 +25,7 @@ public class MachineManager : MonoBehaviour
     {
         //oneBit.SetActive(false); 
 
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = fps;
 
         AssignToggles(); 
     }

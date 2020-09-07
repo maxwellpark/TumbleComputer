@@ -56,8 +56,8 @@ public class Node : MonoBehaviour, IPointerClickHandler
             // Check if component exists on this node  
             if (ComponentIsAttached())
             {
-                Destroy(MachineBuilder.componentContainer[nodePosition]); 
-                MachineBuilder.componentContainer.Remove(nodePosition);
+                Destroy(MachineBuilder.componentData[nodePosition]); 
+                MachineBuilder.componentData.Remove(nodePosition);
                 // we need to destroy the attached component 
                 // can we get reference without using MachineBuilder?
                 // & 
@@ -103,7 +103,7 @@ public class Node : MonoBehaviour, IPointerClickHandler
     // Check if there is already a component at this node 
     private bool ComponentIsAttached()
     {
-        return MachineBuilder.componentContainer.ContainsKey(nodePosition);
+        return MachineBuilder.componentData.ContainsKey(nodePosition);
     }
 
     private void FlipComponent()

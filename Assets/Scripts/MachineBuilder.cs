@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class MachineBuilder : MonoBehaviour
 {
+    public GameObject componentContainer; // the one in the editor 
     public GameObject nodePrefab; 
     public GameObject togglePrefab; 
     
@@ -21,15 +23,15 @@ public class MachineBuilder : MonoBehaviour
     float ySpacing = 3f; 
     
     // stores type and position of components 
-    public static GameObject[] componentObjects;
+    //public static GameObject[] componentObjects;
 
     // rn 
     // is dict necessary? - holds the coords and the obj  
     
     // <Coords, Prefab> 
-    public static Dictionary<Vector2, GameObject> componentContainer = new Dictionary<Vector2, GameObject>();
+    public static Dictionary<Vector2, GameObject> componentData = new Dictionary<Vector2, GameObject>();
 
-    //public static Dictionary<Vector2, HardwareComponent> componentContainer;
+    //public static Dictionary<Vector2, HardwareComponent> componentData;
 
     // use this to iterate through building process later 
     // might be redundant if prefabs are used in lieu 
@@ -59,12 +61,14 @@ public class MachineBuilder : MonoBehaviour
 
     void Start()
     {
+        DestroyAllComponents(); 
+
         if (numberOfNodes <= 0)
         {
             numberOfNodes = defaultNumberOfNodes;
         }
 
-        componentContainer = new Dictionary<Vector2, GameObject>();
+        componentData = new Dictionary<Vector2, GameObject>();
         testValue = togglePrefab;
 
         //testValue = Instantiate(togglePrefab);
@@ -73,18 +77,19 @@ public class MachineBuilder : MonoBehaviour
         // pos of top rung bits based on entrypos and entrywidth/height 
         // prefab with bit rotated 45 degrees either way 
 
-        componentContainer.Add(testKey, testValue); 
+        // later we'll add an iterative method for generating data
+        componentData.Add(testKey, testValue);
 
-
+        BuildMachine(); 
     }
 
     void BuildMachine()
     {
-        foreach (KeyValuePair<Vector2, GameObject> entry in componentContainer)
+        foreach (KeyValuePair<Vector2, GameObject> entry in componentData)
         {
             // comment this 
             GameObject component = Instantiate(entry.Value);
-            component.transform.parent = transform.parent.transform;
+            component.transform.parent = componentContainer.transform;
             component.transform.position = entry.Key; 
             
         }
@@ -123,6 +128,14 @@ public class MachineBuilder : MonoBehaviour
                 // spacing is different (make separate variable or just manipulate here) 
                 // (remember to restore sparing var. afterwards) 
             }
+        }
+    }
+
+    void DestroyAllComponents()
+    {
+        foreach (Transform _transform in componentContainer.transform)
+        {
+            Destroy(_transform.gameObject);
         }
     }
 

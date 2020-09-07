@@ -14,8 +14,8 @@ public class Toggle : MonoBehaviour
 	// geometry too simple? 
 
 	// byte is the smallest integral type 
-	byte value = 0;
-	bool state;
+	public byte value = 0;
+	public bool state;
 
 	// breakout?
 	float zDelta = 90f;
