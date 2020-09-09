@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Scripts;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
@@ -49,6 +50,11 @@ public class MachineManager : MonoBehaviour
     // 
     void Update()
     {
-        
+        // does this belong here? 
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            // const value data abstraction instead of literal?
+            ScreenshotManager.TakeScreenshot_Static(500, 500); 
+        }
     }
 }

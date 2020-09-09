@@ -9,6 +9,7 @@ using UnityEngine.UI;
 // 
 public class InstallationMenu : MonoBehaviour
 {
+    public GameObject board; 
     public GameObject slopePrefab;
     public GameObject togglePrefab;
 
@@ -16,7 +17,10 @@ public class InstallationMenu : MonoBehaviour
     public Button toggleButton;
 
     public GameObject selectedNode;
-    public Vector2 nodePosition; 
+    public Vector2 nodePosition;
+
+    private float slopeOffset = 0.5f;
+    private float toggleOffset = 0.5f; 
 
     void Start()
     {
@@ -26,7 +30,9 @@ public class InstallationMenu : MonoBehaviour
     void InstallComponent(GameObject _prefab)
     {
         GameObject component = Instantiate(_prefab);
-        component.transform.parent = selectedNode.transform; 
+        component.transform.parent = board.transform;
+        component.transform.position = new Vector2(nodePosition.x, nodePosition.y + slopeOffset); 
+        //component.transform.parent = selectedNode.transform; 
 
         // check if comp. already exists, and destroy if so
         // (see MB logic) 

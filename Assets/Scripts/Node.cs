@@ -8,6 +8,7 @@ using UnityEngine.UI;
 // prevent installing/altering components while machine is running? 
 
 // rename to peg? 
+// separation of concerns is not good here
 public class Node : MonoBehaviour, IPointerClickHandler
 {
     public GameObject board; 
@@ -21,6 +22,7 @@ public class Node : MonoBehaviour, IPointerClickHandler
     GameObject attachedComponent; // give node child empty then attach?
 
     [SerializeField] private bool occupied; 
+    //[SerializeField] private float yOffset;
 
 
     //public GameObject installationMenu;
@@ -108,8 +110,18 @@ public class Node : MonoBehaviour, IPointerClickHandler
 
     private void FlipComponent()
     {
-        Debug.Log("Flipping component"); 
-        attachedComponent.transform.eulerAngles += new Vector3(0f, 0f, 180f); 
+        Debug.Log("Flipping component");
+        attachedComponent.transform.eulerAngles += new Vector3(0f, 0f, 180f);
+
+        //attachedComponent.transform.eulerAngles = new Vector3
+        //    (
+        //    attachedComponent.transform.eulerAngles.y, 
+        //    attachedComponent.transform.eulerAngles.x, 
+        //    attachedComponent.transform.eulerAngles.z + 180f
+        //    );
+
+        //attachedComponent.transform.Rotate()
+        Debug.Log("New eulerAngles: " + attachedComponent.transform.eulerAngles); 
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -117,7 +129,8 @@ public class Node : MonoBehaviour, IPointerClickHandler
         // Left click opens a menu from which 
         // a new component can be selected
         // (line endings?)
-        if (eventData.button == PointerEventData.InputButton.Left)
+        if (eventData.button == PointerEventData.InputButton.Left && 
+            InstallationManager.installing)
         {
             //menu.ToggleMenu(gameObject); 
             InstallComponent();

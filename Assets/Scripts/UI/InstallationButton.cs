@@ -40,13 +40,23 @@ public class InstallationButton : MonoBehaviour
         }
     }
 
+    // rename to HandleButtonPress (act/deact combined) 
+    // or have separate Activate and Deactivate methods 
+    // and put inside a handler method 
     private void ActivateButton()
     {
         Debug.Log("ActivateButton");
         SetAllButtonsInteractable();
         button.interactable = false;
+        InstallationManager.installing = true;
         InstallationManager.prefabBeingInstalled = componentPrefab;
         Debug.Log(InstallationManager.prefabBeingInstalled); 
+
+        if (button.interactable)
+        {
+            button.interactable = true; 
+            InstallationManager.installing = false;
+        }
     }
 
     // explain this method 

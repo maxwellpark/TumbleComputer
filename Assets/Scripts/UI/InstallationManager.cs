@@ -9,6 +9,7 @@ public class InstallationManager : MonoBehaviour
     // Holds a reference to the component being placed's 
     // corresponding prefab  
     public static GameObject prefabBeingInstalled;
+    public static bool installing; 
 
     // redundant?
     public GameObject slopePrefab;

@@ -58,6 +58,7 @@
     <Compile Include="Assets\Scripts\Components\ToggleTrigger.cs" />
     <Compile Include="Assets\Scripts\Observer.cs" />
     <Compile Include="Assets\Scripts\Components\Sink.cs" />
+    <Compile Include="Assets\Scripts\ScreenshotManager.cs" />
     <Compile Include="Assets\Scripts\UI\DragNDrop.cs" />
     <Compile Include="Assets\Scripts\Managers\MachineManager.cs" />
     <Compile Include="Assets\Scripts\Components\Bit.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\Animators\RampAnimation.cs" />
     <Compile Include="Assets\Scripts\Components\LeftBit.cs" />
     <Compile Include="Assets\Scripts\Animators\Ramp.cs" />
+    <Compile Include="Assets\Scripts\Animators\BitAnimator.cs" />
     <Compile Include="Assets\Scripts\MachineBuilder.cs" />
     <Compile Include="Assets\Scripts\UI\InstallationMenu.cs" />
     <Compile Include="Assets\Constants\ComponentConstants.cs" />
@@ -83,7 +85,6 @@
     <Compile Include="Assets\Scripts\Components\Ball.cs" />
     <Compile Include="Assets\Scripts\UI\InstallationManager.cs" />
     <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
-    <Compile Include="Assets\Scripts\Animators\BitAnimator.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
