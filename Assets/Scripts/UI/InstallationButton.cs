@@ -7,6 +7,8 @@ using UnityEngine.UI;
 // pressed, toggle off all the others
 // (or at least the currently on toggle)
 // 
+// explain the need for this script and the Manager script 
+// separation of concerns/easier to get references*
 public class InstallationButton : MonoBehaviour
 {
     // The prefab of the component installed by this button
@@ -17,8 +19,8 @@ public class InstallationButton : MonoBehaviour
 
     // The button component attached to the GameObject that 
     // this script is attached to 
-    Button button;
-
+    private Button button;
+        
     private void Start()
     {
         button = GetComponent<Button>();
@@ -58,23 +60,4 @@ public class InstallationButton : MonoBehaviour
             InstallationManager.installing = false;
         }
     }
-
-    // explain this method 
-    //public void OnButtonClicked(Button clickedButton)
-    //{
-    //    Debug.Log("OnBtnClicked"); 
-    //    int buttonIndex = System.Array.IndexOf(buttons, clickedButton);
-
-    //    if (buttonIndex == -1)
-    //        return;
-
-    //    SetAllButtonsInteractable();
-
-    //    clickedButton.interactable = false;
-
-    //    // Set the prefab that will be instantiated at a chosen node 
-    //    InstallationManager.prefabBeingInstalled = componentPrefab; 
-
-
-    //}
 }
