@@ -5,6 +5,7 @@ using UnityEngine.Video;
 
 public class MachineBuilder : MonoBehaviour
 {
+    public GameObject nodeContainer; 
     public GameObject componentContainer; // the one in the editor 
     public GameObject nodePrefab; 
     public GameObject togglePrefab; 
@@ -20,7 +21,12 @@ public class MachineBuilder : MonoBehaviour
     int levels = 6;
     int nodesPerLevel = 12;
     float xSpacing = 3f;
-    float ySpacing = 3f; 
+    float ySpacing = 3f;
+
+
+    float startingXPos = -9f;
+    float nodeXPos = -9f;
+    float nodeYPos = -3f; 
     
     // stores type and position of components 
     //public static GameObject[] componentObjects;
@@ -80,6 +86,7 @@ public class MachineBuilder : MonoBehaviour
         // later we'll add an iterative method for generating data
         componentData.Add(testKey, testValue);
 
+        InstantiateNodes(); 
         BuildMachine(); 
     }
 
@@ -127,6 +134,57 @@ public class MachineBuilder : MonoBehaviour
                 // less nodes than the rest. 
                 // spacing is different (make separate variable or just manipulate here) 
                 // (remember to restore sparing var. afterwards) 
+            }
+        }
+    }
+
+    // Use this if fixed no. of nodes 
+    // 
+    void InstantiateNodes()
+    {
+        for (int i = 0; i < 12; i++)
+        {
+            nodeYPos += ySpacing;
+
+            for (int j = 0; j < 10; i++)
+            {
+                nodeXPos = startingXPos;
+                
+                if (i == 0)
+                {
+                    // can make dynamic by doing +/-, middle no. calc. 
+                    if (j < 2 || j == 5 || j > 8)
+                    {
+                        continue; 
+                    }
+                }
+                else if (i == 1)
+                {
+                    if (j < 1 || j > 9)
+                    {
+                        continue; 
+                    }
+                }
+
+                GameObject newNode = Instantiate(nodePrefab);
+                newNode.transform.parent = nodeContainer.transform;
+                newNode.transform.position = new Vector2(nodeXPos, nodeYPos); 
+                
+                // break this out into RemoveComponentIfBlank method? 
+                if (i % 2 == 0)
+                {
+                    if (j % 2 == 1)
+                    {
+                        Destroy(newNode.GetComponent<Node>());
+                    }
+                }
+                else
+                {
+                    if (j % 2 == 0)
+                    {
+                        Destroy(newNode.GetComponent<Node>()); 
+                    }
+                }
             }
         }
     }
