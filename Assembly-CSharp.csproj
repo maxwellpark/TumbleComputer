@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\UI\DragNDrop.cs" />
     <Compile Include="Assets\Scripts\Managers\MachineManager.cs" />
     <Compile Include="Assets\Scripts\Components\Bit.cs" />
+    <Compile Include="Assets\Scripts\Components\Gear.cs" />
     <Compile Include="Assets\Scripts\UI\InstallationButton.cs" />
     <Compile Include="Assets\Scripts\ExternalProgramParser.cs" />
     <Compile Include="Assets\Scripts\Animators\SlopeAnimator.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\Scripts\Components\Ball.cs" />
     <Compile Include="Assets\Scripts\UI\InstallationManager.cs" />
     <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
+    <Compile Include="Assets\Scripts\Components\GearBit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
