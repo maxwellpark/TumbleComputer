@@ -6,13 +6,25 @@ public class GearBit : MonoBehaviour
 {
     // how to do away with trigger object referencing?
 
-    private Vector2[] neighbourPositions;
-    private GameObject[] neighbours; // populate through MB 
+    public GameObject attachedNode; 
 
-    bool state; 
+    private Vector2[] neighbourPositions;
+    //private GameObject[] neighbours; // populate through MB 
+    private Dictionary<Orientation, GameObject> neighbours; 
+
+    bool state;
+    float zDelta = 90f; 
 
     void Start()
     {
+        neighbours = new Dictionary<Orientation, GameObject>();
+
+        // subscribe to the oninstallation event here 
+        // so whenever gear components are added or destroyed,
+        // we can update the neighbours array 
+
+        AddNeighbours(); 
+
         // just get relative positions from MachineBuilder dict instead?
         neighbourPositions = new Vector2[]
         {
@@ -21,14 +33,20 @@ public class GearBit : MonoBehaviour
             new Vector2(transform.position.y - 3f, transform.position.x),
             new Vector2(transform.position.y + 3f, transform.position.x),
         };
-        
+
         // FindObjectByCoordinates() helper fn
+        // does this conflict with other subscriptions
+        Node.onInstallation += UpdateNeighbours(); 
     }
 
 
+    // subscribe to an event in the GearTrigger class?
     private void OnCollisionEnter(Collision collision)
     {
-
+        for (int i = 0; i < 4; i++)
+        {
+            
+        }
         //transform.rotation.eulerAngles = 
 
 
@@ -41,8 +59,14 @@ public class GearBit : MonoBehaviour
 
     private void Flip()
     {
-        state = !state; 
+        state = !state;
         //transform.rotation.eulerAngles = 
+
+        // can we make this try by creating a static method 
+        // that handles rotation for all components?
+        transform.eulerAngles += state ? new Vector3(0f, 0f, -zDelta) : new Vector3(0f, 0f, zDelta);
+
+
     }
 
     private void RotateNeighbours()
@@ -54,13 +78,32 @@ public class GearBit : MonoBehaviour
         foreach (Vector2 neighbour in neighbourPositions)
         {
             // how to check if component is of type gear?
-            if (MachineBuilder.componentData.ContainsKey(neighbour))
+            if (MachineBuilder.componentGrid.ContainsKey(neighbour))
             {
                 //opposite rotation 
-                //MachineBuilder.componentData[neighbour].gameObject.transform.rotation.eulerAngles = 
+                //MachineBuilder.componentGrid[neighbour].gameObject.transform.rotation.eulerAngles = 
             }
         }
     }
+
+    void AddNeighbours()
+    {
+        neighbours.Add(Orientation.West, MachineBuilder.componentGrid[new Vector2(
+            transform.position.x - MachineConstants.xSpacing, transform.position.y)]);
+        neighbours.Add(Orientation.East, MachineBuilder.componentGrid[new Vector2(
+            transform.position.x + MachineConstants.xSpacing, transform.position.y)]);
+        neighbours.Add(Orientation.South, MachineBuilder.componentGrid[new Vector2(
+            transform.position.y - MachineConstants.ySpacing, transform.position.y)]);
+        neighbours.Add(Orientation.North, MachineBuilder.componentGrid[new Vector2(
+            transform.position.y + MachineConstants.ySpacing, transform.position.y)]);
+    }
+
+    private void UpdateNeighbours(GameObject neighbour)
+    {
+        // switch vector2 and get direction from xy values?
+        // or pass in an Orientation param?
+    }
+
     void Update()
     {
         

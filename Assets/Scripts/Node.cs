@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -11,6 +13,8 @@ using UnityEngine.UI;
 // separation of concerns is not good here
 public class Node : MonoBehaviour, IPointerClickHandler
 {
+    public static event Action<GameObject> onInstallation; // decoupling this would be preferable...
+
     public GameObject board; 
     // prefab array/dict?
 
@@ -20,6 +24,10 @@ public class Node : MonoBehaviour, IPointerClickHandler
     MachineBuilder builder;
 
     GameObject attachedComponent; // give node child empty then attach?
+
+    // This is set to true if the node can
+    // only install gear components
+    private bool restrictedInstallation; 
 
     [SerializeField] private bool occupied; 
     //[SerializeField] private float yOffset;
@@ -47,26 +55,31 @@ public class Node : MonoBehaviour, IPointerClickHandler
          
     }
 
-    // port to installationmenu script?
+    // port to installationmenu script? (SoC) 
     // 
     private void InstallComponent()
     {
-        if (InstallationManager.prefabBeingInstalled != null)
+        if (InstallationManager.selectedPrefab != null)
         {
             Debug.Log("InstallComponent"); 
             // this method should live in the MB class 
             // Check if component exists on this node  
             if (ComponentIsAttached())
             {
-                Destroy(MachineBuilder.componentData[nodePosition]); 
-                MachineBuilder.componentData.Remove(nodePosition);
+                Destroy(MachineBuilder.componentGrid[nodePosition]); 
+                MachineBuilder.componentGrid.Remove(nodePosition);
                 // we need to destroy the attached component 
                 // can we get reference without using MachineBuilder?
                 // & 
             }
 
-            //GameObject newComponent = Instantiate(InstallationManager.prefabBeingInstalled);
-            attachedComponent = Instantiate(InstallationManager.prefabBeingInstalled);
+            // Only gears are permitted if the node is restricted 
+            if (restrictedInstallation && InstallationManager.selectedPrefab.name == "GearPrefab") 
+            {
+                return; 
+            }
+
+            attachedComponent = Instantiate(InstallationManager.selectedPrefab);
 
             // either parent to node or machine top-level
             // hierarchy may be less readable with node parent. 
@@ -74,8 +87,24 @@ public class Node : MonoBehaviour, IPointerClickHandler
             attachedComponent.transform.position = newComponentPosition; 
             //newComponent.transform.localPosition = Vector2.one;
         
-            occupied = true; 
+            occupied = true;
+
+            // invoke here 
+            onInstallation?.Invoke(MachineBuilder.componentGrid[nodePosition]);
         }
+    }
+
+    //private [] GetCorrespondingScript()
+    //{
+           // switch stmt. 
+           // return Bit if bit component, GearBit if gearbit, etc.
+    //}
+
+    private void UninstallComponent()
+    {
+        onInstallation?.Invoke(MachineBuilder.componentGrid[nodePosition]);
+        Destroy(MachineBuilder.componentGrid[nodePosition]);
+        MachineBuilder.componentGrid.Remove(nodePosition);
     }
 
     private GameObject GetCorrespondingPrefab(HardwareComponent component)
@@ -98,14 +127,14 @@ public class Node : MonoBehaviour, IPointerClickHandler
     //    button.onClick.RemoveAllListeners();
     //    button.onClick.AddListener(delegate 
     //    { 
-    //        InstallComponent(InstallationManager.prefabBeingInstalled); 
+    //        InstallComponent(InstallationManager.selectedPrefab); 
     //    });
     //}
 
     // Check if there is already a component at this node 
     private bool ComponentIsAttached()
     {
-        return MachineBuilder.componentData.ContainsKey(nodePosition);
+        return MachineBuilder.componentGrid.ContainsKey(nodePosition);
     }
 
     private void FlipComponent()

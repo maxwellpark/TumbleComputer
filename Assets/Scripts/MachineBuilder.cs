@@ -1,14 +1,22 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
+//rename? 
+public enum Orientation
+{
+    North, East, South, West 
+}
 public class MachineBuilder : MonoBehaviour
 {
     public GameObject nodeContainer; 
     public GameObject componentContainer; // the one in the editor 
     public GameObject nodePrefab; 
-    public GameObject togglePrefab; 
+    public GameObject togglePrefab;
+
+    public static event Action onMachineBuild; // here or installation manager script? 
     
     // top row always needs to be 6? 
     // row below is always 3 + top row? (9)
@@ -35,9 +43,9 @@ public class MachineBuilder : MonoBehaviour
     // is dict necessary? - holds the coords and the obj  
     
     // <Coords, Prefab> 
-    public static Dictionary<Vector2, GameObject> componentData = new Dictionary<Vector2, GameObject>();
+    public static Dictionary<Vector2, GameObject> componentGrid = new Dictionary<Vector2, GameObject>();
 
-    //public static Dictionary<Vector2, HardwareComponent> componentData;
+    //public static Dictionary<Vector2, HardwareComponent> componentGrid;
 
     // use this to iterate through building process later 
     // might be redundant if prefabs are used in lieu 
@@ -67,6 +75,7 @@ public class MachineBuilder : MonoBehaviour
 
     void Start()
     {
+        // Ensure the machine is empty upon startup 
         DestroyAllComponents(); 
 
         if (numberOfNodes <= 0)
@@ -74,7 +83,7 @@ public class MachineBuilder : MonoBehaviour
             numberOfNodes = defaultNumberOfNodes;
         }
 
-        componentData = new Dictionary<Vector2, GameObject>();
+        componentGrid = new Dictionary<Vector2, GameObject>();
         testValue = togglePrefab;
 
         //testValue = Instantiate(togglePrefab);
@@ -84,7 +93,7 @@ public class MachineBuilder : MonoBehaviour
         // prefab with bit rotated 45 degrees either way 
 
         // later we'll add an iterative method for generating data
-        componentData.Add(testKey, testValue);
+        componentGrid.Add(testKey, testValue);
 
         InstantiateNodes(); 
         BuildMachine(); 
@@ -92,7 +101,7 @@ public class MachineBuilder : MonoBehaviour
 
     void BuildMachine()
     {
-        foreach (KeyValuePair<Vector2, GameObject> entry in componentData)
+        foreach (KeyValuePair<Vector2, GameObject> entry in componentGrid)
         {
             // comment this 
             GameObject component = Instantiate(entry.Value);
@@ -182,6 +191,7 @@ public class MachineBuilder : MonoBehaviour
                 {
                     if (j % 2 == 0)
                     {
+                        // Remove the script
                         Destroy(newNode.GetComponent<Node>()); 
                     }
                 }

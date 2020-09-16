@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -51,8 +52,8 @@ public class InstallationButton : MonoBehaviour
         SetAllButtonsInteractable();
         button.interactable = false;
         InstallationManager.installing = true;
-        InstallationManager.prefabBeingInstalled = componentPrefab;
-        Debug.Log(InstallationManager.prefabBeingInstalled); 
+        InstallationManager.selectedPrefab = componentPrefab;
+        Debug.Log(InstallationManager.selectedPrefab); 
 
         if (button.interactable)
         {

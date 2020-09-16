@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\ExternalProgramParser.cs" />
     <Compile Include="Assets\Scripts\Animators\SlopeAnimator.cs" />
     <Compile Include="Assets\Scripts\Components\RightBit.cs" />
+    <Compile Include="Assets\Scripts\Components\GearBit.cs" />
     <Compile Include="Assets\Scripts\Operand.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\Components\Crossover.cs" />
@@ -86,7 +87,7 @@
     <Compile Include="Assets\Scripts\Components\Ball.cs" />
     <Compile Include="Assets\Scripts\UI\InstallationManager.cs" />
     <Compile Include="Assets\Scripts\Components\EndPoint.cs" />
-    <Compile Include="Assets\Scripts\Components\GearBit.cs" />
+    <Compile Include="Assets\Scripts\MachineConstants.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
