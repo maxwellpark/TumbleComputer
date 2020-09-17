@@ -99,7 +99,7 @@ public class Node : MonoBehaviour, IPointerClickHandler
             onInstallation?.Invoke(MachineBuilder.componentGrid[nodePosition]);
 
             // or just .Add to the componentGrid 
-            MachineBuilder.componentGrid.Add(attachedComponent.transform.position, attachedComponent);
+            MachineBuilder.componentGrid.Add(/*attachedComponent.transform.position*/ nodePosition, attachedComponent);
             //
             // we could do away with the KVP and just have a List<Transform> or List<Vector2> 
             // and lookup based on those
