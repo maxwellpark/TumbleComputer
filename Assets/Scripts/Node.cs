@@ -79,18 +79,31 @@ public class Node : MonoBehaviour, IPointerClickHandler
                 return; 
             }
 
-            attachedComponent = Instantiate(InstallationManager.selectedPrefab);
+            attachedComponent = Instantiate(InstallationManager.selectedPrefab, board.transform);
+            attachedComponent.name = InstallationManager.selectedPrefab.ToString();
+            Debug.Log("Newly installed component game object name: " + attachedComponent.name); 
 
             // either parent to node or machine top-level
             // hierarchy may be less readable with node parent. 
-            attachedComponent.transform.parent = board.transform;
+
+            // do we need the instantiated object's position or the attached node position?
+            // to add to the componentGrid?
             attachedComponent.transform.position = newComponentPosition; 
+
             //newComponent.transform.localPosition = Vector2.one;
+
         
             occupied = true;
 
             // invoke here 
             onInstallation?.Invoke(MachineBuilder.componentGrid[nodePosition]);
+
+            // or just .Add to the componentGrid 
+            MachineBuilder.componentGrid.Add(attachedComponent.transform.position, attachedComponent);
+            //
+            // we could do away with the KVP and just have a List<Transform> or List<Vector2> 
+            // and lookup based on those
+            // then we could get the gameObject through transform.gameObject*
         }
     }
 

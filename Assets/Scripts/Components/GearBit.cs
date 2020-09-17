@@ -10,14 +10,21 @@ public class GearBit : MonoBehaviour
 
     private Vector2[] neighbourPositions;
     //private GameObject[] neighbours; // populate through MB 
-    private Dictionary<Orientation, GameObject> neighbours; 
+    //private Dictionary<Orientation, GameObject> neighbours; 
+
+    private List<GameObject> neighbours = new List<GameObject>(); 
 
     bool state;
     float zDelta = 90f; 
 
+    // do we need an event that fires when only Gears are installed, 
+    // so that the neighbours array can be updated with new references?
+
     void Start()
     {
-        neighbours = new Dictionary<Orientation, GameObject>();
+        //neighbours = new Dictionary<Orientation, GameObject>();
+        
+        // encapsulate this 
 
         // subscribe to the oninstallation event here 
         // so whenever gear components are added or destroyed,
@@ -34,19 +41,39 @@ public class GearBit : MonoBehaviour
             new Vector2(transform.position.y + 3f, transform.position.x),
         };
 
+        // can we just use the componentGrid instead of this local List? 
+        foreach (Vector2 _position in neighbourPositions)
+        {
+            if(MachineBuilder.componentGrid.ContainsKey(_position))
+            {
+                neighbours.Add(MachineBuilder.componentGrid[_position]); 
+            }
+        }
+        
+
         // FindObjectByCoordinates() helper fn
-        // does this conflict with other subscriptions
-        Node.onInstallation += UpdateNeighbours(); 
+        // does this conflict with other subscriptions?
+
+        // invoke here 
+        //Node.onInstallation += UpdateNeighbours(); 
     }
 
 
     // subscribe to an event in the GearTrigger class?
     private void OnCollisionEnter(Collision collision)
     {
-        for (int i = 0; i < 4; i++)
+        foreach (GameObject _neighbour in neighbours)
         {
-            
+            // could be easier to use built-in local rotation method 
+            float _neighbourZRotation = _neighbour.transform.rotation.eulerAngles.z;
+            _neighbour.transform.rotation.eulerAngles.Set(0f, 0f, _neighbourZRotation + 90f);
         }
+
+        // this is a suboptimal way of rotating neighbours 
+        //for (int i = 0; i < 4; i++)
+        //{
+        //    // update neighbour transform.rotation on collision 
+        //}
         //transform.rotation.eulerAngles = 
 
 
@@ -86,16 +113,17 @@ public class GearBit : MonoBehaviour
         }
     }
 
+    // this is unnecessarily unDRY 
     void AddNeighbours()
     {
-        neighbours.Add(Orientation.West, MachineBuilder.componentGrid[new Vector2(
-            transform.position.x - MachineConstants.xSpacing, transform.position.y)]);
-        neighbours.Add(Orientation.East, MachineBuilder.componentGrid[new Vector2(
-            transform.position.x + MachineConstants.xSpacing, transform.position.y)]);
-        neighbours.Add(Orientation.South, MachineBuilder.componentGrid[new Vector2(
-            transform.position.y - MachineConstants.ySpacing, transform.position.y)]);
-        neighbours.Add(Orientation.North, MachineBuilder.componentGrid[new Vector2(
-            transform.position.y + MachineConstants.ySpacing, transform.position.y)]);
+        //neighbours.Add(Orientation.West, MachineBuilder.componentGrid[new Vector2(
+        //    transform.position.x - MachineConstants.xSpacing, transform.position.y)]);
+        //neighbours.Add(Orientation.East, MachineBuilder.componentGrid[new Vector2(
+        //    transform.position.x + MachineConstants.xSpacing, transform.position.y)]);
+        //neighbours.Add(Orientation.South, MachineBuilder.componentGrid[new Vector2(
+        //    transform.position.y - MachineConstants.ySpacing, transform.position.y)]);
+        //neighbours.Add(Orientation.North, MachineBuilder.componentGrid[new Vector2(
+        //    transform.position.y + MachineConstants.ySpacing, transform.position.y)]);
     }
 
     private void UpdateNeighbours(GameObject neighbour)
