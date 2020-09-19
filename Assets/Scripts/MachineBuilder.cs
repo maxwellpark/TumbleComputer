@@ -76,7 +76,8 @@ public class MachineBuilder : MonoBehaviour
     void Start()
     {
         // Ensure the machine is empty upon startup 
-        DestroyAllComponents(); 
+        DestroyAllNodes(); 
+        DestroyAllComponents();
 
         if (numberOfNodes <= 0)
         {
@@ -96,7 +97,7 @@ public class MachineBuilder : MonoBehaviour
         componentGrid.Add(testKey, testValue);
 
         InstantiateNodes(); 
-        BuildMachine(); 
+        //BuildMachine(); 
     }
 
     void BuildMachine()
@@ -202,6 +203,15 @@ public class MachineBuilder : MonoBehaviour
     void DestroyAllComponents()
     {
         foreach (Transform _transform in componentContainer.transform)
+        {
+            Destroy(_transform.gameObject);
+        }
+    }
+
+    // do we need a combined destruction method? 
+    void DestroyAllNodes()
+    {
+        foreach (Transform _transform in nodeContainer.transform)
         {
             Destroy(_transform.gameObject);
         }
