@@ -2481,7 +2481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 215276614}
   m_Layer: 0
-  m_Name: Nodes
+  m_Name: NodeContainer
   m_TagString: NodeContainer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2624,7 +2624,7 @@ Transform:
   - {fileID: 4767788788457608681}
   - {fileID: 1209361857}
   m_Father: {fileID: 530438670}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216263182
 GameObject:
@@ -7199,14 +7199,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1403537585}
+  - {fileID: 1423805399}
   - {fileID: 1699544288}
   - {fileID: 1236990155}
   - {fileID: 215276614}
   - {fileID: 1572439846}
+  - {fileID: 1198481547}
   - {fileID: 2082268802}
   - {fileID: 1430564270}
-  - {fileID: 1198481547}
-  - {fileID: 1423805399}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7222,7 +7222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feccf7cb765eafb47b1e88b56236183c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeContainer: {fileID: 0}
+  nodeContainer: {fileID: 215276613}
   componentContainer: {fileID: 1198481546}
   nodePrefab: {fileID: 4767788786846580374, guid: 9dd2047182405f94f849ab8836a87f23, type: 3}
   togglePrefab: {fileID: 444864560110815025, guid: a3ba446e289536b48a55c7743243d532, type: 3}
@@ -13686,11 +13686,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1256310256167451386, guid: b62ba65ad0bf8e742a6db3e6e7376672, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.70000005
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1256310256167451386, guid: b62ba65ad0bf8e742a6db3e6e7376672, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.52
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1256310256167451386, guid: b62ba65ad0bf8e742a6db3e6e7376672, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16513,7 +16513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1198481547}
   m_Layer: 0
-  m_Name: Components
+  m_Name: ComponentContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16544,7 +16544,7 @@ Transform:
   - {fileID: 1729545016}
   - {fileID: 1356577399}
   m_Father: {fileID: 530438670}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1202470914
 GameObject:
@@ -17239,7 +17239,7 @@ RectTransform:
   m_Children:
   - {fileID: 2118952402}
   m_Father: {fileID: 530438670}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18709,16 +18709,16 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Ball reset
 --- !u!222 &1327539311
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19779,7 +19779,7 @@ RectTransform:
   m_Children:
   - {fileID: 1349409462}
   m_Father: {fileID: 530438670}
-  m_RootOrder: 8
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -19798,12 +19798,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3c9aee3282560d4f8e429586d453efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  machineBuilder: {fileID: 530438671}
   grid: {fileID: 530438669}
+  ballContainer: {fileID: 1572439845}
   blueBallPrefab: {fileID: 1256310256167451391, guid: b62ba65ad0bf8e742a6db3e6e7376672, type: 3}
-  redBallPrefab: {fileID: 0}
+  redBallPrefab: {fileID: 6988012006955386803, guid: bb2097d1f6e364643ac3cbaae448429f, type: 3}
   blueBallButton: {fileID: 1647541204}
-  redBallButton: {fileID: 0}
-  ballResetButton: {fileID: 0}
+  redBallButton: {fileID: 1263896968}
+  ballResetButton: {fileID: 1500500683}
   componentResetButton: {fileID: 0}
   machineStartButton: {fileID: 0}
 --- !u!114 &1423805401
@@ -19935,7 +19937,7 @@ Transform:
   m_LocalScale: {x: 2.2500005, y: 0.25, z: 2}
   m_Children: []
   m_Father: {fileID: 530438670}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10}
 --- !u!65 &1430564271
 BoxCollider:
@@ -20831,7 +20833,6 @@ GameObject:
   - component: {fileID: 1500500686}
   - component: {fileID: 1500500684}
   - component: {fileID: 1500500683}
-  - component: {fileID: 1500500685}
   m_Layer: 0
   m_Name: BallResetButton
   m_TagString: Untagged
@@ -20912,24 +20913,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1500500685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1500500682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b1c6e43017fe24993821674e304c0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPrefab: {fileID: 1647541203}
-  buttons:
-  - {fileID: 1647541204}
-  - {fileID: 1263896968}
-  - {fileID: 1500500683}
-  - {fileID: 1898291450}
 --- !u!222 &1500500686
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22428,7 +22411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1572439846}
   m_Layer: 0
-  m_Name: Marbles
+  m_Name: BallContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22447,7 +22430,7 @@ Transform:
   m_Children:
   - {fileID: 1654440232}
   m_Father: {fileID: 530438670}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576289679
 GameObject:
@@ -25214,7 +25197,7 @@ RectTransform:
   m_Children:
   - {fileID: 2114303612}
   m_Father: {fileID: 530438670}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -27666,14 +27649,13 @@ GameObject:
   - component: {fileID: 1898291452}
   - component: {fileID: 1898291451}
   - component: {fileID: 1898291450}
-  - component: {fileID: 1898291449}
   m_Layer: 0
   m_Name: MachineResetButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1898291448
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27689,29 +27671,11 @@ RectTransform:
   m_Father: {fileID: 1349409462}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 450.10004, y: -50}
+  m_SizeDelta: {x: 128.6, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1898291449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898291447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b1c6e43017fe24993821674e304c0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPrefab: {fileID: 1647541203}
-  buttons:
-  - {fileID: 1647541204}
-  - {fileID: 1263896968}
-  - {fileID: 1500500683}
-  - {fileID: 1898291450}
 --- !u!114 &1898291450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30282,7 +30246,7 @@ Transform:
   m_LocalScale: {x: 2.2500005, y: 0.25, z: 2}
   m_Children: []
   m_Father: {fileID: 530438670}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10}
 --- !u!1 &2082830487
 GameObject:
@@ -31456,7 +31420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2125285864
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31472,10 +31436,10 @@ RectTransform:
   m_Father: {fileID: 1349409462}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 562.625, y: -50}
+  m_SizeDelta: {x: 160.75, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2125285865
 MonoBehaviour:

@@ -96,7 +96,7 @@ public class MachineBuilder : MonoBehaviour
         // later we'll add an iterative method for generating data
         componentGrid.Add(testKey, testValue);
 
-        InstantiateNodes(); 
+        //InstantiateNodes(); 
         //BuildMachine(); 
     }
 
@@ -200,7 +200,7 @@ public class MachineBuilder : MonoBehaviour
         }
     }
 
-    void DestroyAllComponents()
+    public void DestroyAllComponents()
     {
         foreach (Transform _transform in componentContainer.transform)
         {

@@ -11,7 +11,10 @@ public enum TopButtonType
 
 public class TopMenu : MonoBehaviour
 {
+    public MachineBuilder machineBuilder; 
+
     public GameObject grid; // naming convention 
+    public GameObject ballContainer; 
     public GameObject blueBallPrefab; 
     public GameObject redBallPrefab;
 
@@ -20,9 +23,6 @@ public class TopMenu : MonoBehaviour
     public Button ballResetButton;
     public Button componentResetButton;
     public Button machineStartButton;
-
-    private Vector2 blueReleasePoint;
-    private Vector2 redReleasePoint; 
 
     void Start()
     {
@@ -34,38 +34,39 @@ public class TopMenu : MonoBehaviour
 
     void SetupListener(Button button, UnityAction handler)
     {
-        //button = GetComponent<Button>();
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(handler);
     }
 
-    // port these methods to MachineBuilder?
-    // (for separation of concerns) 
     void ReleaseBlueBall()
     {
-        GameObject ball = Instantiate(blueBallPrefab, grid.transform);
-        ball.transform.position = blueReleasePoint; 
+        GameObject ball = Instantiate(blueBallPrefab, ballContainer.transform);
+        ball.transform.position = MachineConstants.blueReleasePoint; 
     }
 
     void ReleaseRedBall()
     {
-        GameObject ball = Instantiate(redBallPrefab, grid.transform);
-        ball.transform.position = redReleasePoint;
+        GameObject ball = Instantiate(redBallPrefab, ballContainer.transform);
+        ball.transform.position = MachineConstants.redReleasePoint;
     }
 
     void ResetBalls()
     {
-        GameObject[] balls = GameObject.FindGameObjectsWithTag("Ball");
-        foreach (GameObject ball in balls)
+        // use container instead? 
+        //GameObject[] balls = GameObject.FindGameObjectsWithTag("Ball");
+        //foreach (GameObject ball in balls)
+        //{
+        //    Destroy(ball.transform); 
+        //}
+        foreach (Transform _transform in ballContainer.transform)
         {
-            Destroy(ball.transform); 
+            Destroy(_transform.gameObject); 
         }
     }
 
     void ResetComponents()
     {
-        //MachineBuilder.DestroyAllComponents(); 
+        machineBuilder.DestroyAllComponents(); 
+        //MachineBuilder.DestroyAllComponents();
     }
-
-
 }

@@ -125,6 +125,7 @@ public class GearBit : MonoBehaviour
         {
             // need to do +/-, (or conditional rotation based on current state)
             //neighbour.transform.rotation =
+            neighbour.transform.eulerAngles += state ? new Vector3(0f, 0f, zDelta) : new Vector3(0f, 0f, -zDelta); // opposite 
             
         }
     }
