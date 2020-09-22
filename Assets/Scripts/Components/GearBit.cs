@@ -6,7 +6,7 @@ public class GearBit : MonoBehaviour
 {
     // how to do away with trigger object referencing?
 
-    public GameObject attachedNode; 
+    public GameObject attachedNode;
 
     private Vector2[] neighbourPositions;
     //private GameObject[] neighbours; // populate through MB 
@@ -17,7 +17,7 @@ public class GearBit : MonoBehaviour
     private List<GameObject> neighbours = new List<GameObject>();
 
     bool state;
-    float zDelta = 90f; 
+    float zDelta = 90f; // constants class 
 
     // do we need an event that fires when only Gears are installed, 
     // so that the neighbours array can be updated with new references?
@@ -25,7 +25,7 @@ public class GearBit : MonoBehaviour
     void Start()
     {
         //neighbours = new Dictionary<Orientation, GameObject>();
-        
+
         // subscribe to the oninstallation event here 
         // so whenever gear components are added or destroyed,
         // we can update the neighbours array 
@@ -38,7 +38,7 @@ public class GearBit : MonoBehaviour
             // can these be moved to a static class? (they are they same 
             // as all (just pass in the transform.position of the object 
             // instance in question) 
-            new Vector2(transform.position.x - 3f, transform.position.y), 
+            new Vector2(transform.position.x - 3f, transform.position.y),
             new Vector2(transform.position.x + 3f, transform.position.y),
             new Vector2(transform.position.y - 3f, transform.position.x),
             new Vector2(transform.position.y + 3f, transform.position.x),
@@ -46,7 +46,9 @@ public class GearBit : MonoBehaviour
 
         // should it be utils, not constants?
         // since it can change at any moment...
-        neighbours = MachineConstants.GetNeighbourPositions(neighbourPositions);
+
+        UpdateNeighbours(); 
+        InstallationManager.onInstallation += UpdateNeighbours; 
 
         // can we just use the componentGrid instead of this local List? 
 
@@ -57,7 +59,7 @@ public class GearBit : MonoBehaviour
         //        neighbours.Add(MachineBuilder.componentGrid[_position]); 
         //    }
         //}
-        
+
 
         // FindObjectByCoordinates() helper fn
         // does this conflict with other subscriptions?
@@ -126,7 +128,7 @@ public class GearBit : MonoBehaviour
             // need to do +/-, (or conditional rotation based on current state)
             //neighbour.transform.rotation =
             neighbour.transform.eulerAngles += state ? new Vector3(0f, 0f, zDelta) : new Vector3(0f, 0f, -zDelta); // opposite 
-            
+
         }
     }
 
@@ -143,10 +145,16 @@ public class GearBit : MonoBehaviour
         //    transform.position.y + MachineConstants.ySpacing, transform.position.y)]);
     }
 
-    private void UpdateNeighbours(GameObject neighbour)
+    private void UpdateNeighbours_(GameObject neighbour)
     {
         // switch vector2 and get direction from xy values?
         // or pass in an Orientation param?
+    }
+
+    private void UpdateNeighbours()
+    {
+        Debug.Log("Getting new neighbour positions from GearBit sub"); 
+        neighbours = MachineConstants.GetNeighbourPositions(neighbourPositions);
     }
 
     void Update()

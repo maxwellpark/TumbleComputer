@@ -41,7 +41,8 @@ public class TopMenu : MonoBehaviour
     void ReleaseBlueBall()
     {
         GameObject ball = Instantiate(blueBallPrefab, ballContainer.transform);
-        ball.transform.position = MachineConstants.blueReleasePoint; 
+        ball.transform.position = /*new Vector3(2.5f, 2.5f, 0f); */MachineConstants.blueReleasePoint;
+        Debug.Log("Blueballpos; " + ball.transform.position);
     }
 
     void ReleaseRedBall()
@@ -52,12 +53,6 @@ public class TopMenu : MonoBehaviour
 
     void ResetBalls()
     {
-        // use container instead? 
-        //GameObject[] balls = GameObject.FindGameObjectsWithTag("Ball");
-        //foreach (GameObject ball in balls)
-        //{
-        //    Destroy(ball.transform); 
-        //}
         foreach (Transform _transform in ballContainer.transform)
         {
             Destroy(_transform.gameObject); 
@@ -67,6 +62,5 @@ public class TopMenu : MonoBehaviour
     void ResetComponents()
     {
         machineBuilder.DestroyAllComponents(); 
-        //MachineBuilder.DestroyAllComponents();
     }
 }

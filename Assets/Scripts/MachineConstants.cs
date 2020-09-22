@@ -5,12 +5,16 @@ using UnityEngine;
 public class MachineConstants : MonoBehaviour
 {
     // Coordinates at which balls will be released 
-    public static Vector3 blueReleasePoint = new Vector3(0.5f, 2.5f, 1f);
-    public static Vector3 redReleasePoint = new Vector3(17.5f, 2.5f, 1f); 
+    public static Vector3 blueReleasePoint = new Vector3(0.5f, 2.5f, 0f);
+    public static Vector3 redReleasePoint = new Vector3(18f, 2.5f, 0f); 
 
     // Spacing between nodes 
     public static float xSpacing = 3f; 
     public static float ySpacing = 3f;
+
+    // Button colours 
+    public static Color buttonSelectedColour = new Color(1f, 1f, 1f, 50f);
+    public static Color buttonDeselectedColour = new Color(1f, 1f, 1f, 255f); 
 
     // does this really belong here?
     public static List<GameObject> GetNeighbourPositions(Vector2[] _positions)

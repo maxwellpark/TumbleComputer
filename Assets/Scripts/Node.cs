@@ -183,8 +183,10 @@ public class Node : MonoBehaviour, IPointerClickHandler
         // of the currently attached component
         else if (eventData.button == PointerEventData.InputButton.Right)
         {
+            Debug.Log("RMB"); 
             if (occupied)
             {
+                Debug.Log("IsOccupied"); 
                 // flip ramp z rotation by 180 degrees
                 // bit z rotation by 90 degrees 
                 // ... 

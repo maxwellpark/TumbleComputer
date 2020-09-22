@@ -76,7 +76,8 @@ public class MachineBuilder : MonoBehaviour
     void Start()
     {
         // Ensure the machine is empty upon startup 
-        DestroyAllNodes(); 
+        //DestroyAllNodes(); 
+
         DestroyAllComponents();
 
         if (numberOfNodes <= 0)
@@ -96,7 +97,7 @@ public class MachineBuilder : MonoBehaviour
         // later we'll add an iterative method for generating data
         componentGrid.Add(testKey, testValue);
 
-        //InstantiateNodes(); 
+        //InstantiateNodes();
         //BuildMachine(); 
     }
 

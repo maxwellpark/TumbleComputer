@@ -56,5 +56,7 @@ public class MachineManager : MonoBehaviour
             // const value data abstraction instead of literal?
             ScreenshotManager.TakeScreenshot_Static(500, 500); 
         }
+
+        //Debug.Log("Mousepos " + Input.mousePosition);
     }
 }

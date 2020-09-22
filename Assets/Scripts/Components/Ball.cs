@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    Rigidbody rb;
-    Vector3 force;
+    private Rigidbody rb;
+    private Vector3 force;
 
     private void Start()
     {
@@ -17,8 +17,8 @@ public class Ball : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log("RB velocity:" + rb.velocity);
-        Debug.Log("RB magnitude: " + rb.velocity.magnitude); 
+        //Debug.Log("RB velocity:" + rb.velocity);
+        //Debug.Log("RB magnitude: " + rb.velocity.magnitude); 
         if (rb.velocity.magnitude <= 100f)
         {
             //rb.AddTorque(Vector3.one); 
