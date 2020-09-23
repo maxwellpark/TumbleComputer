@@ -1195,9 +1195,8 @@ GameObject:
   - component: {fileID: 77027618}
   - component: {fileID: 77027616}
   - component: {fileID: 77027615}
-  - component: {fileID: 77027617}
   m_Layer: 0
-  m_Name: GearBitButton
+  m_Name: RedBallButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1266,8 +1265,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 048679e33a3036846abbf2a8cc1ec993, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1276,25 +1275,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &77027617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77027614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b1c6e43017fe24993821674e304c0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPrefab: {fileID: 444864560110815025, guid: a3ba446e289536b48a55c7743243d532, type: 3}
-  buttons:
-  - {fileID: 1088921632}
-  - {fileID: 77027615}
-  - {fileID: 424920257}
-  - {fileID: 1148614964}
-  installationButtons: []
 --- !u!222 &77027618
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1313,15 +1293,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1739607383}
+  m_Children: []
   m_Father: {fileID: 2118952402}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 643, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &85419610
 GameObject:
@@ -7621,7 +7600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341601020}
   m_LocalRotation: {x: 0, y: 0, z: -0.06540306, w: 0.99785894}
-  m_LocalPosition: {x: 10, y: -34, z: 0}
+  m_LocalPosition: {x: 10, y: -34, z: -5}
   m_LocalScale: {x: 35, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 530438670}
@@ -9309,9 +9288,8 @@ GameObject:
   - component: {fileID: 424920260}
   - component: {fileID: 424920258}
   - component: {fileID: 424920257}
-  - component: {fileID: 424920259}
   m_Layer: 0
-  m_Name: CrossoverButton
+  m_Name: ResetBallsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9390,25 +9368,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &424920259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424920256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b1c6e43017fe24993821674e304c0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPrefab: {fileID: 1088921631}
-  buttons:
-  - {fileID: 1088921632}
-  - {fileID: 77027615}
-  - {fileID: 424920257}
-  - {fileID: 1148614964}
-  installationButtons: []
 --- !u!222 &424920260
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9435,7 +9394,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 643, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &427596192
 GameObject:
@@ -11711,6 +11670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeContainer: {fileID: 215276613}
+  ballContainer: {fileID: 0}
   componentContainer: {fileID: 1198481546}
   nodePrefab: {fileID: 4767788786846580374, guid: 9dd2047182405f94f849ab8836a87f23, type: 3}
   togglePrefab: {fileID: 444864560110815025, guid: a3ba446e289536b48a55c7743243d532, type: 3}
@@ -24857,9 +24817,8 @@ GameObject:
   - component: {fileID: 1088921635}
   - component: {fileID: 1088921633}
   - component: {fileID: 1088921632}
-  - component: {fileID: 1088921634}
   m_Layer: 0
-  m_Name: GearButton
+  m_Name: BlueBallButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24928,8 +24887,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ecc0483adab1522489ec5dd9a43e2cb6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -24938,25 +24897,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1088921634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1088921631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b1c6e43017fe24993821674e304c0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPrefab: {fileID: 6759159245112885046, guid: 135e5d4bb92811646ac9f04306a424de, type: 3}
-  buttons:
-  - {fileID: 1088921632}
-  - {fileID: 77027615}
-  - {fileID: 424920257}
-  - {fileID: 1148614964}
-  installationButtons: []
 --- !u!222 &1088921635
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24975,15 +24915,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1453226691}
+  m_Children: []
   m_Father: {fileID: 2118952402}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 643, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1089009565
 GameObject:
@@ -26450,9 +26389,8 @@ GameObject:
   - component: {fileID: 1148614966}
   - component: {fileID: 1148614965}
   - component: {fileID: 1148614964}
-  - component: {fileID: 1148614963}
   m_Layer: 0
-  m_Name: InterceptorButton
+  m_Name: ResetComponentsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26476,27 +26414,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 643, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1148614963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148614961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b1c6e43017fe24993821674e304c0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPrefab: {fileID: 1088921631}
-  buttons:
-  - {fileID: 1088921632}
-  - {fileID: 77027615}
-  - {fileID: 424920257}
-  - {fileID: 1148614964}
-  installationButtons: []
 --- !u!114 &1148614964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28489,9 +28408,9 @@ GameObject:
   - component: {fileID: 1236990161}
   - component: {fileID: 1236990160}
   - component: {fileID: 1236990159}
+  - component: {fileID: 1236990156}
   - component: {fileID: 1236990158}
   - component: {fileID: 1236990157}
-  - component: {fileID: 1236990156}
   m_Layer: 0
   m_Name: RightInstallationMenu
   m_TagString: Untagged
@@ -28528,13 +28447,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1236990154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 340d888f3f6951749a6c38463a5e0871, type: 3}
+  m_Script: {fileID: 11500000, guid: e3c9aee3282560d4f8e429586d453efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentBeingInstalled: 0
-  slopePrefab: {fileID: 3000410033468794289, guid: 73109d6ff0a09cc49a99ced817a304c7, type: 3}
-  bitPrefab: {fileID: 0}
-  terminatorPrefab: {fileID: 0}
+  machineBuilder: {fileID: 530438671}
+  grid: {fileID: 530438669}
+  ballContainer: {fileID: 1572439845}
+  componentContainer: {fileID: 0}
+  blueBallPrefab: {fileID: 1256310256167451391, guid: b62ba65ad0bf8e742a6db3e6e7376672, type: 3}
+  redBallPrefab: {fileID: 1256310256167451391, guid: 24692b0fb88d4074c82a0da7a9c3c369, type: 3}
+  blueBallButton: {fileID: 1088921632}
+  redBallButton: {fileID: 77027615}
+  ballResetButton: {fileID: 424920257}
+  componentResetButton: {fileID: 1148614964}
 --- !u!114 &1236990157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28997,10 +28922,10 @@ RectTransform:
   m_Father: {fileID: 1349409462}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 321.5, y: -50}
+  m_SizeDelta: {x: 214.33333, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1264963208
 GameObject:
@@ -32586,7 +32511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1423805399
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32622,13 +32547,13 @@ MonoBehaviour:
   machineBuilder: {fileID: 530438671}
   grid: {fileID: 530438669}
   ballContainer: {fileID: 1572439845}
+  componentContainer: {fileID: 0}
   blueBallPrefab: {fileID: 1256310256167451391, guid: b62ba65ad0bf8e742a6db3e6e7376672, type: 3}
   redBallPrefab: {fileID: 1256310256167451391, guid: 24692b0fb88d4074c82a0da7a9c3c369, type: 3}
   blueBallButton: {fileID: 1647541204}
   redBallButton: {fileID: 1263896968}
   ballResetButton: {fileID: 1500500683}
   componentResetButton: {fileID: 0}
-  machineStartButton: {fileID: 0}
 --- !u!114 &1423805401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33637,85 +33562,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1453226690
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1453226691}
-  - component: {fileID: 1453226693}
-  - component: {fileID: 1453226692}
-  m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1453226691
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453226690}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1088921636}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1453226692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453226690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 2
-    m_MaxSize: 200
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Ramp Component
---- !u!222 &1453226693
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1453226690}
-  m_CullTransparentMesh: 0
 --- !u!1 &1457128803
 GameObject:
   m_ObjectHideFlags: 0
@@ -34968,10 +34814,10 @@ RectTransform:
   m_Father: {fileID: 1349409462}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 535.8333, y: -50}
+  m_SizeDelta: {x: 214.33333, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1507316418
 GameObject:
@@ -36248,13 +36094,13 @@ MonoBehaviour:
   machineBuilder: {fileID: 1811355444}
   grid: {fileID: 1811355443}
   ballContainer: {fileID: 2046095811}
+  componentContainer: {fileID: 0}
   blueBallPrefab: {fileID: 1256310256167451391, guid: b62ba65ad0bf8e742a6db3e6e7376672, type: 3}
   redBallPrefab: {fileID: 1256310256167451391, guid: 24692b0fb88d4074c82a0da7a9c3c369, type: 3}
   blueBallButton: {fileID: 1412643926}
   redBallButton: {fileID: 291676732}
   ballResetButton: {fileID: 1340528075}
   componentResetButton: {fileID: 0}
-  machineStartButton: {fileID: 0}
 --- !u!1 &1531949538
 GameObject:
   m_ObjectHideFlags: 0
@@ -37998,7 +37844,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -38007,7 +37853,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Rest Components
 --- !u!222 &1589294347
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39677,10 +39523,10 @@ RectTransform:
   m_Father: {fileID: 1349409462}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 107.166664, y: -50}
+  m_SizeDelta: {x: 214.33333, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1652556739
 GameObject:
@@ -41830,85 +41676,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   machineBuilder: {fileID: 530438669}
   restrictedInstallation: 0
---- !u!1 &1739607382
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1739607383}
-  - component: {fileID: 1739607385}
-  - component: {fileID: 1739607384}
-  m_Layer: 0
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1739607383
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739607382}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 77027619}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1739607384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739607382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Button
---- !u!222 &1739607385
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739607382}
-  m_CullTransparentMesh: 0
 --- !u!1 &1741878201
 GameObject:
   m_ObjectHideFlags: 0
@@ -43687,6 +43454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeContainer: {fileID: 1428127667}
+  ballContainer: {fileID: 0}
   componentContainer: {fileID: 242090718}
   nodePrefab: {fileID: 4767788786846580374, guid: 9dd2047182405f94f849ab8836a87f23, type: 3}
   togglePrefab: {fileID: 444864560110815025, guid: a3ba446e289536b48a55c7743243d532, type: 3}
@@ -47129,17 +46897,17 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Button
+    m_LineSpacing: 10
+  m_Text: Reset Balls
 --- !u!222 &1964991698
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50646,7 +50414,7 @@ GameObject:
   - component: {fileID: 2118952402}
   - component: {fileID: 2118952403}
   m_Layer: 0
-  m_Name: InstallationButtonContainer
+  m_Name: MetaButtonContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50692,12 +50460,12 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_Spacing: 6
   m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0

@@ -11,7 +11,8 @@ public enum Orientation
 }
 public class MachineBuilder : MonoBehaviour
 {
-    public GameObject nodeContainer; 
+    public GameObject nodeContainer;
+    public GameObject ballContainer; 
     public GameObject componentContainer; // the one in the editor 
     public GameObject nodePrefab; 
     public GameObject togglePrefab;
@@ -210,9 +211,9 @@ public class MachineBuilder : MonoBehaviour
     }
 
     // do we need a combined destruction method? 
-    void DestroyAllNodes()
+    public void DestroyGameObjects(Transform container)
     {
-        foreach (Transform _transform in nodeContainer.transform)
+        foreach (Transform _transform in container)
         {
             Destroy(_transform.gameObject);
         }

@@ -4,17 +4,13 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public enum TopButtonType
-{
-    BlueBall, RedBall, BallReset, MachineReset, MachineStart 
-}
-
 public class TopMenu : MonoBehaviour
 {
     public MachineBuilder machineBuilder; 
 
     public GameObject grid; // naming convention 
-    public GameObject ballContainer; 
+    public GameObject ballContainer; // don't need refs. in machineBUilder anymore! 
+    public GameObject componentContainer; 
     public GameObject blueBallPrefab; 
     public GameObject redBallPrefab;
 
@@ -22,9 +18,8 @@ public class TopMenu : MonoBehaviour
     public Button redBallButton;
     public Button ballResetButton;
     public Button componentResetButton;
-    public Button machineStartButton;
 
-    void Start()
+    private void Start()
     {
         SetupListener(blueBallButton, ReleaseBlueBall);
         SetupListener(redBallButton, ReleaseRedBall);
@@ -32,35 +27,32 @@ public class TopMenu : MonoBehaviour
         SetupListener(componentResetButton, ResetComponents);
     }
 
-    void SetupListener(Button button, UnityAction handler)
+    private void SetupListener(Button button, UnityAction handler)
     {
         button.onClick.RemoveAllListeners();
         button.onClick.AddListener(handler);
     }
 
-    void ReleaseBlueBall()
+    private void ReleaseBlueBall()
     {
         GameObject ball = Instantiate(blueBallPrefab, ballContainer.transform);
-        ball.transform.position = /*new Vector3(2.5f, 2.5f, 0f); */MachineConstants.blueReleasePoint;
-        Debug.Log("Blueballpos; " + ball.transform.position);
+        ball.transform.localPosition = MachineConstants.blueReleasePoint;
+        Debug.Log("Blueballpos; " + ball.transform.position); 
     }
 
-    void ReleaseRedBall()
+    private void ReleaseRedBall()
     {
         GameObject ball = Instantiate(redBallPrefab, ballContainer.transform);
         ball.transform.position = MachineConstants.redReleasePoint;
     }
 
-    void ResetBalls()
+    private void ResetBalls()
     {
-        foreach (Transform _transform in ballContainer.transform)
-        {
-            Destroy(_transform.gameObject); 
-        }
+        machineBuilder.DestroyGameObjects(ballContainer.transform); 
     }
 
-    void ResetComponents()
+    private void ResetComponents()
     {
-        machineBuilder.DestroyAllComponents(); 
+        machineBuilder.DestroyGameObjects(componentContainer.transform); 
     }
 }
