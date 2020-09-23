@@ -13,40 +13,27 @@ using UnityEngine.UI;
 // separation of concerns is not good here
 public class Node : MonoBehaviour, IPointerClickHandler
 {
-    public static event Action<GameObject> onInstallation; // decoupling this would be preferable...
-
-    public GameObject board; 
-    // prefab array/dict?
-
-    // separate gameObj for builder?
-    // distinct from manager? (editor readable)
     public GameObject machineBuilder;
-    MachineBuilder builder;
+    private GameObject grid; 
 
-    GameObject attachedComponent; // give node child empty then attach?
+    private GameObject attachedComponent;
 
     // This is set to true if the node can
     // only install gear components
-    private bool restrictedInstallation; 
+    [SerializeField] private bool restrictedInstallation; 
 
-    [SerializeField] private bool occupied; 
-    //[SerializeField] private float yOffset;
-
-
-    //public GameObject installationMenu;
-    //InstallationMenu menu;
-
-    // parent or child? 
-
-    public GameObject slopePrefab;
+    /*[SerializeField] */private bool occupied; 
 
     Vector2 nodePosition;
     Vector2 newComponentPosition;
     float yDelta = 0.75f; // but will vary depending on comp. type 
 
+    public static event Action<GameObject> onInstallation; // decoupling this would be preferable...
 
     private void Start()
     {
+        // 
+        grid = transform.parent.transform.parent.gameObject; 
         //menu = installationMenu.GetComponent<InstallationMenu>();
         //button = GetComponent<Button>(); 
         //AddListener();
@@ -74,12 +61,13 @@ public class Node : MonoBehaviour, IPointerClickHandler
             }
 
             // Only gears are permitted if the node is restricted 
-            if (restrictedInstallation && InstallationManager.selectedPrefab.name == "GearPrefab") 
+            // explain how some nodes are restricted later 
+            if (restrictedInstallation && InstallationManager.selectedPrefab.transform.tag == "GearBit" /*InstallationManager.selectedPrefab.name == "GearPrefab"*/) 
             {
                 return; 
             }
 
-            attachedComponent = Instantiate(InstallationManager.selectedPrefab, board.transform);
+            attachedComponent = Instantiate(InstallationManager.selectedPrefab, grid.transform);
             attachedComponent.name = InstallationManager.selectedPrefab.ToString();
             Debug.Log("Newly installed component game object name: " + attachedComponent.name); 
 
@@ -107,12 +95,6 @@ public class Node : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    //private [] GetCorrespondingScript()
-    //{
-           // switch stmt. 
-           // return Bit if bit component, GearBit if gearbit, etc.
-    //}
-
     private void UninstallComponent()
     {
         onInstallation?.Invoke(MachineBuilder.componentGrid[nodePosition]);
@@ -120,31 +102,7 @@ public class Node : MonoBehaviour, IPointerClickHandler
         MachineBuilder.componentGrid.Remove(nodePosition);
     }
 
-    private GameObject GetCorrespondingPrefab(HardwareComponent component)
-    {
-        switch (component) 
-        {
-            case HardwareComponent.Slope:
-                return slopePrefab;
-
-
-            default:
-                // return empty gameObj representing null? 
-                return slopePrefab; 
-        }
-    }
-
-    //private void AddListener()
-    //{
-    //    Button button = GetComponent<Button>();
-    //    button.onClick.RemoveAllListeners();
-    //    button.onClick.AddListener(delegate 
-    //    { 
-    //        InstallComponent(InstallationManager.selectedPrefab); 
-    //    });
-    //}
-
-    // Check if there is already a component at this node 
+    // Check if there's already a component at this node 
     private bool ComponentIsAttached()
     {
         return MachineBuilder.componentGrid.ContainsKey(nodePosition);
@@ -152,31 +110,31 @@ public class Node : MonoBehaviour, IPointerClickHandler
 
     private void FlipComponent()
     {
-        Debug.Log("Flipping component");
-        attachedComponent.transform.eulerAngles += new Vector3(0f, 0f, 180f);
-
-        //attachedComponent.transform.eulerAngles = new Vector3
-        //    (
-        //    attachedComponent.transform.eulerAngles.y, 
-        //    attachedComponent.transform.eulerAngles.x, 
-        //    attachedComponent.transform.eulerAngles.z + 180f
-        //    );
-
-        //attachedComponent.transform.Rotate()
+        float zRotation = GetZRotation(attachedComponent);
+        attachedComponent.transform.eulerAngles += new Vector3(0f, 0f, zRotation);
         Debug.Log("New eulerAngles: " + attachedComponent.transform.eulerAngles); 
+    }
+
+    private float GetZRotation(GameObject component)
+    {
+        switch (component.transform.tag)
+        {
+            case "Ramp":
+                return 20f;
+            case "Bit":
+                return 90f;
+            case "GearBit":
+                return 90f;
+            default:
+                return 0f; 
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        // Left click opens a menu from which 
-        // a new component can be selected
-        // (line endings?)
-        if (eventData.button == PointerEventData.InputButton.Left && 
-            InstallationManager.installing)
+        if (eventData.button == PointerEventData.InputButton.Left && InstallationManager.installing)
         {
-            //menu.ToggleMenu(gameObject); 
             InstallComponent();
-
         }
 
         // Right click reverses the direction 
@@ -187,15 +145,8 @@ public class Node : MonoBehaviour, IPointerClickHandler
             if (occupied)
             {
                 Debug.Log("IsOccupied"); 
-                // flip ramp z rotation by 180 degrees
-                // bit z rotation by 90 degrees 
-                // ... 
-
-                // need reference to attached component? 
                 FlipComponent(); 
             }
         }
-
-        //throw new System.NotImplementedException();
     }
 }

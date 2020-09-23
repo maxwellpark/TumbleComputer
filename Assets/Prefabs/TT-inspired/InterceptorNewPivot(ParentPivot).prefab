@@ -38,6 +38,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8934570931533452612}
     m_Modifications:
+    - target: {fileID: 4110979096647647898, guid: b9a85cfea6c42c248a9891dcdba88cda, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db353330297b968448509eb6fe093a56, type: 2}
+    - target: {fileID: 8897092834659507450, guid: b9a85cfea6c42c248a9891dcdba88cda, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db353330297b968448509eb6fe093a56, type: 2}
     - target: {fileID: 8897092834659507452, guid: b9a85cfea6c42c248a9891dcdba88cda, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -94,6 +102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interceptor
       objectReference: {fileID: 0}
+    - target: {fileID: 8897092835203057712, guid: b9a85cfea6c42c248a9891dcdba88cda, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db353330297b968448509eb6fe093a56, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9a85cfea6c42c248a9891dcdba88cda, type: 3}
 --- !u!4 &2359068196524494616 stripped
