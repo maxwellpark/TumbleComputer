@@ -84,7 +84,8 @@ public class InstallationButton : MonoBehaviour
     // and put inside a handler method 
     private void ButtonHandler()
     {
-        Debug.Log("ActivateButton");
+        //    Debug.Log("ButtonHandler");
+        //    Debug.Log("Selected: " + selected);
         //SetAllButtonsInteractable();
         //button.interactable = false;
 
@@ -106,6 +107,8 @@ public class InstallationButton : MonoBehaviour
             // set to null or just leave as is? 
             //InstallationManager.selectedPrefab = componentPrefab;
         }
+
+        Debug.Log("Selected: " + selected);
 
         //if (button.interactable)
         //{

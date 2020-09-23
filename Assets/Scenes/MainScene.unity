@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &28135107
 CapsuleCollider:
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &38693111
 GameObject:
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &45490901
 GameObject:
@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &57958683
 GameObject:
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &67956988
 GameObject:
@@ -787,7 +787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &71587312
 GameObject:
@@ -835,7 +835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &71587315
 CapsuleCollider:
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &75361964
 CapsuleCollider:
@@ -1181,7 +1181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &77027614
 GameObject:
@@ -1525,7 +1525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &91943403
 GameObject:
@@ -1669,7 +1669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &107433891
 GameObject:
@@ -1858,7 +1858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &118681483
 CapsuleCollider:
@@ -2144,7 +2144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &132785046
 GameObject:
@@ -2192,7 +2192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &132785049
 CapsuleCollider:
@@ -2270,7 +2270,7 @@ GameObject:
   - component: {fileID: 135697069}
   - component: {fileID: 135697068}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: BallCatcherVertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2461,7 +2461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &139253794
 GameObject:
@@ -2509,7 +2509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &139253797
 CapsuleCollider:
@@ -3064,7 +3064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &171437166
 CapsuleCollider:
@@ -3238,7 +3238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &200975745
 GameObject:
@@ -3463,7 +3463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &206606174
 GameObject:
@@ -3511,7 +3511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &206606177
 CapsuleCollider:
@@ -3849,6 +3849,7 @@ Transform:
   - {fileID: 1824947526}
   - {fileID: 4767788788457608681}
   - {fileID: 1209361857}
+  - {fileID: 773059308}
   m_Father: {fileID: 1264963209}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3961,7 +3962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &217933923
 GameObject:
@@ -4452,7 +4453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &233323307
 CapsuleCollider:
@@ -4677,7 +4678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &238727087
 CapsuleCollider:
@@ -4931,7 +4932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &250322172
 CapsuleCollider:
@@ -5047,7 +5048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &253249809
 CapsuleCollider:
@@ -5335,7 +5336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &258115104
 GameObject:
@@ -5383,7 +5384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &258115107
 CapsuleCollider:
@@ -5494,7 +5495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &259594029
 CapsuleCollider:
@@ -5839,7 +5840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &268680906
 GameObject:
@@ -5950,7 +5951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &276290364
 GameObject:
@@ -6061,7 +6062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &284360420
 GameObject:
@@ -6438,7 +6439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &303286119
 GameObject:
@@ -6811,7 +6812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &307794812
 GameObject:
@@ -6859,7 +6860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &307794815
 CapsuleCollider:
@@ -7033,7 +7034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &315227729
 GameObject:
@@ -7081,7 +7082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &315227732
 CapsuleCollider:
@@ -7287,7 +7288,7 @@ PrefabInstance:
     - target: {fileID: 3458921264461654334, guid: 9e8918206274f934b838f511e4d38287, type: 3}
       propertyPath: machineBuilder
       value: 
-      objectReference: {fileID: 1811355443}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e8918206274f934b838f511e4d38287, type: 3}
 --- !u!1 &330247208
@@ -7541,7 +7542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &339910512
 GameObject:
@@ -7586,7 +7587,7 @@ GameObject:
   - component: {fileID: 341601023}
   - component: {fileID: 341601022}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: BallCatcherHorizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7600,7 +7601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341601020}
   m_LocalRotation: {x: 0, y: 0, z: -0.06540306, w: 0.99785894}
-  m_LocalPosition: {x: 10, y: -34, z: -5}
+  m_LocalPosition: {x: 10, y: -34, z: 0}
   m_LocalScale: {x: 35, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 530438670}
@@ -7714,7 +7715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &342844021
 CapsuleCollider:
@@ -7904,7 +7905,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &349468336
 CapsuleCollider:
@@ -8218,7 +8219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &352230635
 GameObject:
@@ -8329,7 +8330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &355435922
 GameObject:
@@ -8413,7 +8414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &359187952
 CapsuleCollider:
@@ -8745,7 +8746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &394599968
 GameObject:
@@ -9086,7 +9087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1001 &414082292
 PrefabInstance:
@@ -9211,7 +9212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &423878907
 CapsuleCollider:
@@ -9442,7 +9443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &427596195
 CapsuleCollider:
@@ -9777,7 +9778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &435792468
 CapsuleCollider:
@@ -10065,7 +10066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &441278282
 GameObject:
@@ -10290,7 +10291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &446298634
 GameObject:
@@ -10338,7 +10339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &446298637
 CapsuleCollider:
@@ -10777,7 +10778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &499810466
 GameObject:
@@ -10888,7 +10889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &500227310
 GameObject:
@@ -10999,7 +11000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &508747923
 GameObject:
@@ -11047,7 +11048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &508747926
 CapsuleCollider:
@@ -11158,7 +11159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &509394262
 CapsuleCollider:
@@ -11443,7 +11444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &518962606
 CapsuleCollider:
@@ -11554,7 +11555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &523842586
 CapsuleCollider:
@@ -11670,7 +11671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeContainer: {fileID: 215276613}
-  ballContainer: {fileID: 0}
+  ballContainer: {fileID: 1572439845}
   componentContainer: {fileID: 1198481546}
   nodePrefab: {fileID: 4767788786846580374, guid: 9dd2047182405f94f849ab8836a87f23, type: 3}
   togglePrefab: {fileID: 444864560110815025, guid: a3ba446e289536b48a55c7743243d532, type: 3}
@@ -11721,7 +11722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &544241034
 CapsuleCollider:
@@ -11895,7 +11896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &547091848
 GameObject:
@@ -12006,7 +12007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &548735221
 GameObject:
@@ -12165,7 +12166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &551666802
 CapsuleCollider:
@@ -12339,7 +12340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &558087339
 GameObject:
@@ -12482,7 +12483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &559885333
 CapsuleCollider:
@@ -12967,7 +12968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &577445069
 CapsuleCollider:
@@ -13157,7 +13158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &589289701
 CapsuleCollider:
@@ -13349,7 +13350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &593009652
 CapsuleCollider:
@@ -13713,7 +13714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &620898031
 GameObject:
@@ -13824,7 +13825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &626909759
 GameObject:
@@ -13935,7 +13936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &628701233
 GameObject:
@@ -13983,7 +13984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &628701236
 CapsuleCollider:
@@ -14157,7 +14158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &634236915
 GameObject:
@@ -14205,7 +14206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &634236918
 CapsuleCollider:
@@ -14427,7 +14428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &650941629
 CapsuleCollider:
@@ -14601,7 +14602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &651776942
 GameObject:
@@ -14649,7 +14650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &651776945
 CapsuleCollider:
@@ -15107,7 +15108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &672628748
 GameObject:
@@ -15463,7 +15464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &692490084
 CapsuleCollider:
@@ -15637,7 +15638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &705507993
 GameObject:
@@ -15954,7 +15955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &733423348
 GameObject:
@@ -16002,7 +16003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &733423351
 CapsuleCollider:
@@ -16176,7 +16177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &742363783
 GameObject:
@@ -16281,7 +16282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &743117334
 CapsuleCollider:
@@ -16566,7 +16567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &748364272
 CapsuleCollider:
@@ -16740,7 +16741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &760622144
 GameObject:
@@ -16851,7 +16852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &768331435
 GameObject:
@@ -16899,7 +16900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &768331438
 CapsuleCollider:
@@ -16964,6 +16965,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 768331435}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &773059308 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+  m_PrefabInstance: {fileID: 5743902112236732851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &777974654
 GameObject:
   m_ObjectHideFlags: 0
@@ -17073,7 +17079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &786193034
 GameObject:
@@ -17121,7 +17127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &786193037
 CapsuleCollider:
@@ -17295,7 +17301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &794095592
 GameObject:
@@ -17454,7 +17460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &797111706
 CapsuleCollider:
@@ -17723,7 +17729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &807768878
 GameObject:
@@ -17945,7 +17951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &811729669
 GameObject:
@@ -18069,7 +18075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &816650403
 CapsuleCollider:
@@ -18180,7 +18186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &818719080
 CapsuleCollider:
@@ -18464,7 +18470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &829317426
 GameObject:
@@ -18788,7 +18794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &845430518
 GameObject:
@@ -18955,7 +18961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &853458012
 CapsuleCollider:
@@ -19152,7 +19158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &868448553
 CapsuleCollider:
@@ -19326,7 +19332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &877496250
 GameObject:
@@ -19551,7 +19557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &886316252
 GameObject:
@@ -19662,7 +19668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &888116343
 GameObject:
@@ -19951,7 +19957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &898310113
 CapsuleCollider:
@@ -20062,7 +20068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &900875298
 CapsuleCollider:
@@ -20173,7 +20179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &906120396
 CapsuleCollider:
@@ -20395,7 +20401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &911008343
 CapsuleCollider:
@@ -20585,7 +20591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &932422036
 GameObject:
@@ -20633,7 +20639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &932422039
 CapsuleCollider:
@@ -20807,7 +20813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &933725391
 GameObject:
@@ -20898,7 +20904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &935232559
 CapsuleCollider:
@@ -21115,7 +21121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1001 &941365731
 PrefabInstance:
@@ -21295,7 +21301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &946418899
 GameObject:
@@ -21438,7 +21444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &947107714
 CapsuleCollider:
@@ -21864,7 +21870,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 25
+  orthographic size: 22.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -22013,7 +22019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &978501547
 CapsuleCollider:
@@ -22187,7 +22193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &983823353
 GameObject:
@@ -22469,7 +22475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &995638183 stripped
 GameObject:
@@ -22671,7 +22677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1011395767
 GameObject:
@@ -22782,7 +22788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1018186413
 GameObject:
@@ -22971,7 +22977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1022149481
 CapsuleCollider:
@@ -23246,7 +23252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1034530497
 CapsuleCollider:
@@ -23420,7 +23426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1040201514
 GameObject:
@@ -23468,7 +23474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1040201517
 CapsuleCollider:
@@ -23674,7 +23680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1047168805
 CapsuleCollider:
@@ -24040,7 +24046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!4 &1067336344 stripped
 Transform:
@@ -24156,7 +24162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1077134978
 GameObject:
@@ -24204,7 +24210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1077134981
 CapsuleCollider:
@@ -24378,7 +24384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1086092474
 GameObject:
@@ -24426,7 +24432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1086092477
 CapsuleCollider:
@@ -24803,7 +24809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1088921631
 GameObject:
@@ -25033,7 +25039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1095176175
 GameObject:
@@ -25081,7 +25087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1095176178
 CapsuleCollider:
@@ -25255,7 +25261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1103364995
 GameObject:
@@ -25622,7 +25628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1126057353
 CapsuleCollider:
@@ -25995,7 +26001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1139370332
 GameObject:
@@ -26122,7 +26128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1141575550
 CapsuleCollider:
@@ -26296,7 +26302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1146937038
 GameObject:
@@ -26543,7 +26549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1158704805
 CapsuleCollider:
@@ -26796,7 +26802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!4 &1180898627 stripped
 Transform:
@@ -26917,7 +26923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1190563137
 CapsuleCollider:
@@ -27028,7 +27034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1198018910
 CapsuleCollider:
@@ -27506,7 +27512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1204394594
 CapsuleCollider:
@@ -27760,7 +27766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1215917359
 GameObject:
@@ -27808,7 +27814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1215917362
 CapsuleCollider:
@@ -27919,7 +27925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1217288577
 CapsuleCollider:
@@ -28096,7 +28102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1224946613
 CapsuleCollider:
@@ -29295,7 +29301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1287073249
 GameObject:
@@ -29343,7 +29349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1287073252
 CapsuleCollider:
@@ -29583,7 +29589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1302928090
 GameObject:
@@ -29631,7 +29637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1302928093
 CapsuleCollider:
@@ -29776,7 +29782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1310926254
 CapsuleCollider:
@@ -29950,7 +29956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1316718082
 GameObject:
@@ -30270,7 +30276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1327539308
 GameObject:
@@ -30602,7 +30608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1345855101
 CapsuleCollider:
@@ -30780,7 +30786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1353812167
 CapsuleCollider:
@@ -30891,7 +30897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1355432969
 CapsuleCollider:
@@ -31183,7 +31189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1382179347
 CapsuleCollider:
@@ -31294,7 +31300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1386191342
 CapsuleCollider:
@@ -31582,7 +31588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1396712483
 GameObject:
@@ -31693,7 +31699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1397255100
 GameObject:
@@ -31741,7 +31747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1397255103
 CapsuleCollider:
@@ -32203,7 +32209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1412880670
 CapsuleCollider:
@@ -32377,7 +32383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1417885439
 GameObject:
@@ -32425,7 +32431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1417885442
 CapsuleCollider:
@@ -32698,7 +32704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1424879881
 CapsuleCollider:
@@ -32972,8 +32978,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430564269}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -33122,7 +33128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1447692559
 GameObject:
@@ -33170,7 +33176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1447692562
 CapsuleCollider:
@@ -33608,7 +33614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1457128806
 CapsuleCollider:
@@ -34019,7 +34025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1485242000
 CapsuleCollider:
@@ -34240,7 +34246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1490400354
 CapsuleCollider:
@@ -34507,7 +34513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1493029792
 GameObject:
@@ -34928,7 +34934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1507866251
 GameObject:
@@ -35747,7 +35753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1526695763
 GameObject:
@@ -35937,7 +35943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1531173699
 GameObject:
@@ -36147,7 +36153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1531949541
 CapsuleCollider:
@@ -36321,7 +36327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1547271309
 GameObject:
@@ -36563,7 +36569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1556843354
 GameObject:
@@ -36674,7 +36680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!4 &1560222963 stripped
 Transform:
@@ -36727,7 +36733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1565076434
 CapsuleCollider:
@@ -36917,7 +36923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1571170244
 CapsuleCollider:
@@ -37122,7 +37128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1578199042
 GameObject:
@@ -37479,7 +37485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1585781383
 GameObject:
@@ -38471,7 +38477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1618939019
 GameObject:
@@ -38519,7 +38525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1618939022
 CapsuleCollider:
@@ -38893,7 +38899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1628085788
 GameObject:
@@ -38941,7 +38947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1628085791
 CapsuleCollider:
@@ -39115,7 +39121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1634125558
 GameObject:
@@ -39321,7 +39327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1637367223
 GameObject:
@@ -39574,7 +39580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1652556742
 CapsuleCollider:
@@ -39968,7 +39974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1660330827
 GameObject:
@@ -40174,7 +40180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1001 &1669629710
 PrefabInstance:
@@ -40403,7 +40409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1670654242
 CapsuleCollider:
@@ -40624,7 +40630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1683520631
 CapsuleCollider:
@@ -41038,7 +41044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1698669332
 GameObject:
@@ -41086,7 +41092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1698669335
 CapsuleCollider:
@@ -41374,7 +41380,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1724322869
 Transform:
   m_ObjectHideFlags: 0
@@ -41464,7 +41470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1726468420
 GameObject:
@@ -41674,7 +41680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1741878201
 GameObject:
@@ -41824,7 +41830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1746836359
 CapsuleCollider:
@@ -41935,7 +41941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1751754634
 CapsuleCollider:
@@ -42318,7 +42324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!4 &1764131479 stripped
 Transform:
@@ -42434,7 +42440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1772182509
 GameObject:
@@ -42577,7 +42583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1773749306
 CapsuleCollider:
@@ -42751,7 +42757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1776830601
 GameObject:
@@ -42799,7 +42805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1776830604
 CapsuleCollider:
@@ -42910,7 +42916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1778024846
 CapsuleCollider:
@@ -43021,7 +43027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1787086222
 CapsuleCollider:
@@ -43195,7 +43201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1793256819
 GameObject:
@@ -43243,7 +43249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1793256822
 CapsuleCollider:
@@ -43417,7 +43423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!4 &1802074381 stripped
 Transform:
@@ -43829,7 +43835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1826800031
 GameObject:
@@ -43988,7 +43994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1841539806
 CapsuleCollider:
@@ -44178,7 +44184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1848395836
 CapsuleCollider:
@@ -44520,7 +44526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1870550086
 CapsuleCollider:
@@ -44694,7 +44700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1873604118
 GameObject:
@@ -45184,7 +45190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1919860107
 GameObject:
@@ -45295,7 +45301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1001 &1921032952
 PrefabInstance:
@@ -45412,7 +45418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1928273762
 CapsuleCollider:
@@ -45523,7 +45529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1930377327
 CapsuleCollider:
@@ -45833,7 +45839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1940378671
 GameObject:
@@ -45881,7 +45887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1940378674
 CapsuleCollider:
@@ -45992,7 +45998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1940909447
 CapsuleCollider:
@@ -46103,7 +46109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1949769728
 CapsuleCollider:
@@ -46214,7 +46220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1950375845
 CapsuleCollider:
@@ -46388,7 +46394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1954949748
 GameObject:
@@ -46613,7 +46619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1961404606
 GameObject:
@@ -46724,7 +46730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &1962707817
 GameObject:
@@ -46772,7 +46778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1962707820
 CapsuleCollider:
@@ -47064,7 +47070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &1981201962
 CapsuleCollider:
@@ -47410,7 +47416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &2007485511
 GameObject:
@@ -47521,7 +47527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1001 &2010009524
 PrefabInstance:
@@ -47541,7 +47547,7 @@ PrefabInstance:
     - target: {fileID: 292898251689736382, guid: 9dd2047182405f94f849ab8836a87f23, type: 3}
       propertyPath: machineBuilder
       value: 
-      objectReference: {fileID: 1811355443}
+      objectReference: {fileID: 0}
     - target: {fileID: 915275915355459532, guid: 9dd2047182405f94f849ab8836a87f23, type: 3}
       propertyPath: m_RootOrder
       value: 123
@@ -47675,7 +47681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &2017209899
 CapsuleCollider:
@@ -47881,7 +47887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &2035925067
 CapsuleCollider:
@@ -47992,7 +47998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &2039801973
 CapsuleCollider:
@@ -48166,7 +48172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &2046095811
 GameObject:
@@ -48432,7 +48438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &2069710110
 GameObject:
@@ -48480,7 +48486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &2069710113
 CapsuleCollider:
@@ -48654,7 +48660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &2070940075
 GameObject:
@@ -48876,7 +48882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &2081287022
 GameObject:
@@ -48987,7 +48993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &2081606241
 GameObject:
@@ -49232,7 +49238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1001 &2083737307
 PrefabInstance:
@@ -49405,7 +49411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &2085207169
 GameObject:
@@ -49604,7 +49610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &2097352321
 CapsuleCollider:
@@ -49889,7 +49895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &2102504626
 GameObject:
@@ -50000,7 +50006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &2106245338
 GameObject:
@@ -50048,7 +50054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &2106245341
 CapsuleCollider:
@@ -50222,7 +50228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 530438669}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!1 &2110083264
 GameObject:
@@ -50270,7 +50276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &2110083267
 CapsuleCollider:
@@ -50646,7 +50652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed371fb76da0c404f817a0bcba0b26e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  machineBuilder: {fileID: 1811355443}
+  machineBuilder: {fileID: 0}
   restrictedInstallation: 0
 --- !u!136 &2123967924
 CapsuleCollider:
@@ -51130,7 +51136,7 @@ PrefabInstance:
     - target: {fileID: 3458921264461654334, guid: 9e8918206274f934b838f511e4d38287, type: 3}
       propertyPath: machineBuilder
       value: 
-      objectReference: {fileID: 530438669}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e8918206274f934b838f511e4d38287, type: 3}
 --- !u!1001 &4475386858117032469
@@ -51216,14 +51222,14 @@ PrefabInstance:
     - target: {fileID: 292898251689736382, guid: 9dd2047182405f94f849ab8836a87f23, type: 3}
       propertyPath: machineBuilder
       value: 
-      objectReference: {fileID: 530438669}
+      objectReference: {fileID: 0}
     - target: {fileID: 915275915355459532, guid: 9dd2047182405f94f849ab8836a87f23, type: 3}
       propertyPath: m_RootOrder
       value: 123
       objectReference: {fileID: 0}
     - target: {fileID: 4767788786846580374, guid: 9dd2047182405f94f849ab8836a87f23, type: 3}
       propertyPath: m_Name
-      value: Node
+      value: NEWNODE!
       objectReference: {fileID: 0}
     - target: {fileID: 4767788786846580375, guid: 9dd2047182405f94f849ab8836a87f23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51365,6 +51371,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6de552480a13864cae8ea68d1ac12e8, type: 3}
+--- !u!1001 &5743902112236732851
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 215276614}
+    m_Modifications:
+    - target: {fileID: 5743902111933887320, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_Name
+      value: FINALNODE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887326, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: machineBuilder
+      value: 
+      objectReference: {fileID: 530438671}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7070799
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.006170608
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.006170608
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7070799
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_RootOrder
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743902111933887327, guid: 18ee2f5067324334280492e2d5605550, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18ee2f5067324334280492e2d5605550, type: 3}
 --- !u!1001 &5893408514199084646
 PrefabInstance:
   m_ObjectHideFlags: 0

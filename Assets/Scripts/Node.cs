@@ -13,7 +13,7 @@ using UnityEngine.UI;
 // separation of concerns is not good here
 public class Node : MonoBehaviour, IPointerClickHandler
 {
-    public GameObject machineBuilder;
+    public MachineBuilder machineBuilder;
     private GameObject grid; 
 
     private GameObject attachedComponent;
@@ -132,6 +132,8 @@ public class Node : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log("OPC");
+        Debug.Log("Installation bool: " + InstallationManager.installing);
         if (eventData.button == PointerEventData.InputButton.Left && InstallationManager.installing)
         {
             InstallComponent();

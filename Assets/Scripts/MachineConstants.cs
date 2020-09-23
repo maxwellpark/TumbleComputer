@@ -6,7 +6,7 @@ public class MachineConstants : MonoBehaviour
 {
     // Coordinates at which balls will be released 
     public static Vector3 blueReleasePoint = new Vector3(0.5f, 3f, 0f);
-    public static Vector3 redReleasePoint = new Vector3(18f, 3f, 0f); 
+    public static Vector3 redReleasePoint = new Vector3(20f, 3f, 0f); 
 
     // Spacing between nodes 
     public static float xSpacing = 3f; 
