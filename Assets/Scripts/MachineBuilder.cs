@@ -219,6 +219,20 @@ public class MachineBuilder : MonoBehaviour
         }
     }
 
+    public static string LogComponentGrid()
+    {
+        string log = string.Empty;
+        int counter = 0; 
+
+        foreach (KeyValuePair<Vector2, GameObject> entry in componentGrid)
+        {
+            log += $"CGrid entry {counter}: {entry} \n"; 
+            counter++; 
+        }
+
+        return log; 
+    }
+
     void Update()
     {
         

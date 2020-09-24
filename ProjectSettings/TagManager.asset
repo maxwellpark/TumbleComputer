@@ -8,6 +8,12 @@ TagManager:
   - NodeContainer
   - ComponentContainer
   - Ramp
+  - Gear
+  - GearBit
+  - Interceptor
+  - Crossover
+  - BlueSink
+  - RedSink
   layers:
   - Default
   - TransparentFX

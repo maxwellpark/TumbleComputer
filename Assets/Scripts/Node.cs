@@ -14,26 +14,23 @@ using UnityEngine.UI;
 public class Node : MonoBehaviour, IPointerClickHandler
 {
     public MachineBuilder machineBuilder;
-    private GameObject grid; 
 
+    public GameObject componentContainer; 
     private GameObject attachedComponent;
 
     // This is set to true if the node can
     // only install gear components
     [SerializeField] private bool restrictedInstallation; 
 
-    /*[SerializeField] */private bool occupied; 
+    private bool occupied; 
 
-    Vector2 nodePosition;
-    Vector2 newComponentPosition;
-    float yDelta = 0.75f; // but will vary depending on comp. type 
+    private Vector2 nodePosition;
 
     public static event Action<GameObject> onInstallation; // decoupling this would be preferable...
 
     private void Start()
     {
         // 
-        grid = transform.parent.transform.parent.gameObject; 
         //menu = installationMenu.GetComponent<InstallationMenu>();
         //button = GetComponent<Button>(); 
         //AddListener();
@@ -62,12 +59,12 @@ public class Node : MonoBehaviour, IPointerClickHandler
 
             // Only gears are permitted if the node is restricted 
             // explain how some nodes are restricted later 
-            if (restrictedInstallation && InstallationManager.selectedPrefab.transform.tag == "GearBit" /*InstallationManager.selectedPrefab.name == "GearPrefab"*/) 
+            if (restrictedInstallation && InstallationManager.selectedPrefab.transform.tag != "GearBit" /*InstallationManager.selectedPrefab.name == "GearPrefab"*/) 
             {
                 return; 
             }
 
-            attachedComponent = Instantiate(InstallationManager.selectedPrefab, grid.transform);
+            attachedComponent = Instantiate(InstallationManager.selectedPrefab, componentContainer.transform);
             attachedComponent.name = InstallationManager.selectedPrefab.ToString();
             Debug.Log("Newly installed component game object name: " + attachedComponent.name);
 
@@ -78,7 +75,8 @@ public class Node : MonoBehaviour, IPointerClickHandler
             // to add to the componentGrid?
 
             // Y position is component type-specific 
-            attachedComponent.transform.position = new Vector3(transform.position.x, InstallationManager.GetYDelta(), 0f); 
+            attachedComponent.transform.position = new Vector3(
+                transform.position.x, transform.position.y + InstallationManager.GetYDelta(), 0f);
 
 
             //attachedComponent.transform.position = newComponentPosition; 
@@ -88,10 +86,13 @@ public class Node : MonoBehaviour, IPointerClickHandler
             occupied = true;
 
             // invoke here 
-            onInstallation?.Invoke(MachineBuilder.componentGrid[nodePosition]);
+            //onInstallation?.Invoke(MachineBuilder.componentGrid[nodePosition]);
 
             // or just .Add to the componentGrid 
             MachineBuilder.componentGrid.Add(/*attachedComponent.transform.position*/ nodePosition, attachedComponent);
+            Debug.Log(MachineBuilder.LogComponentGrid()); 
+
+
             //
             // we could do away with the KVP and just have a List<Transform> or List<Vector2> 
             // and lookup based on those
@@ -116,6 +117,7 @@ public class Node : MonoBehaviour, IPointerClickHandler
     {
         float zRotation = GetZRotation(attachedComponent);
         attachedComponent.transform.eulerAngles += new Vector3(0f, 0f, zRotation);
+        Debug.Log("Flipping with RMB underway"); 
         Debug.Log("New eulerAngles: " + attachedComponent.transform.eulerAngles); 
     }
 
