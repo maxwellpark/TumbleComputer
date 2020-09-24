@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{CB1585A6-22B9-F1FA-F294-D653DA5AF200}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -56,23 +55,25 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Components\ToggleTrigger.cs" />
+    <Compile Include="Assets\Scripts\Components\BitTrigger.cs" />
+    <Compile Include="Assets\Scripts\Components\Toggle.cs" />
     <Compile Include="Assets\Scripts\Components\Sink.cs" />
     <Compile Include="Assets\Scripts\ScreenshotManager.cs" />
-    <Compile Include="Assets\Scripts\Components\Bit.cs" />
     <Compile Include="Assets\Scripts\UI\TopMenu.cs" />
     <Compile Include="Assets\Scripts\Components\Gear.cs" />
     <Compile Include="Assets\Scripts\UI\InstallationButton.cs" />
     <Compile Include="Assets\Scripts\Components\GearBit.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\UI\TopButton.cs" />
+    <Compile Include="Assets\Scripts\Components\ToggleTrigger.cs" />
     <Compile Include="Assets\Scripts\MachineConstants.cs" />
     <Compile Include="Assets\Scripts\MachineBuilder.cs" />
     <Compile Include="Assets\Scripts\UI\InstallationMenu.cs" />
     <Compile Include="Assets\Constants\ComponentConstants.cs" />
-    <Compile Include="Assets\Scripts\Components\Toggle.cs" />
+    <Compile Include="Assets\Scripts\Components\Bit.cs" />
     <Compile Include="Assets\Scripts\Components\Ball.cs" />
     <Compile Include="Assets\Scripts\UI\InstallationManager.cs" />
+    <Compile Include="Assets\Scripts\Components\Ramp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

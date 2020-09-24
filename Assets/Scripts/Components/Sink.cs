@@ -17,13 +17,13 @@ public class Sink : MonoBehaviour
     private void RespawnMarble()
     {
         GameObject newMarble = Instantiate(ballPrefab, ballContainer.transform);
-        newMarble.transform.position = ballColour == BallColour.Blue ?
+        newMarble.transform.localPosition = ballColour == BallColour.Blue ?
             MachineConstants.blueReleasePoint : MachineConstants.redReleasePoint;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.transform.tag == "Marble")
+        if (other.transform.tag == "Marble")
         {
             RespawnMarble();
         }

@@ -10,15 +10,21 @@ public class MachineConstants : MonoBehaviour
 
     // Distance on y axis between nodes are their attached components,
     // which varies component to component 
-    public static float rampYDelta = 0.75f;
+    public static float rampYDelta = 0.5f;
     public static float bitYDelta = 0.25f;
     public static float gearBitYDelta = 0.75f;
     public static float gearYDelta = 0.75f;
     public static float crossoverYDelta = 0.75f;
     public static float interceptorYDelta = 0.75f;
 
-    // Degree to which bits are flipped on z axis 
-    public static float bitZRotation = 90f; 
+    // Z axis rotation values
+    public static float rampZRotation = -20f;
+    public static float rampZRotationFlipped = 20f; 
+    public static float bitZRotation = 90f;
+
+    // Eulers 
+    public static Vector3 rampRotation = new Vector3(0f, 0f, -20f);
+    public static Vector3 rampRotationFlipped = new Vector3(0f, 0f, 20f);
 
     // Button colours 
     public static Color buttonSelectedColour = new Color(1f, 1f, 1f, 50f);

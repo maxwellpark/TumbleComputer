@@ -70,10 +70,33 @@ public class Node : MonoBehaviour, IPointerClickHandler
 
     private void FlipComponent()
     {
-        float zRotation = GetZRotation(attachedComponent);
-        attachedComponent.transform.eulerAngles += new Vector3(0f, 0f, zRotation);
-        Debug.Log("Flipping with RMB underway");
-        Debug.Log("New eulerAngles: " + attachedComponent.transform.eulerAngles);
+        //float zRotation = GetZRotation(attachedComponent);
+        //attachedComponent.transform.eulerAngles += new Vector3(0f, 0f, zRotation);
+        //Debug.Log("Flipping with RMB underway");
+        //Debug.Log("New eulerAngles: " + attachedComponent.transform.eulerAngles);
+        switch (attachedComponent.transform.tag)
+        {
+            case "Ramp":
+                Ramp ramp = attachedComponent.GetComponent<Ramp>();
+                ramp.Flip();
+                //if (ramp.transform.eulerAngles.z == 20f)
+                //{
+                //    ramp.PointRight();
+                //}
+                //else if (ramp.transform.eulerAngles.z == -20f)
+                //{
+                //    ramp.PointLeft();
+                //}
+
+                break;
+
+            case "Bit":
+                Bit bit = attachedComponent.GetComponent<Bit>();
+                bit.ToggleState();
+                break; 
+            
+                
+        }
     }
 
     private float GetZRotation(GameObject component)
@@ -93,20 +116,15 @@ public class Node : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("OPC");
-        Debug.Log("Installation bool: " + InstallationManager.installing);
         if (eventData.button == PointerEventData.InputButton.Left && InstallationManager.installing)
         {
             InstallComponent();
         }
 
-        // Right click reverses the direction of the currently attached component
         else if (eventData.button == PointerEventData.InputButton.Right)
         {
-            Debug.Log("RMB");
             if (occupied)
             {
-                Debug.Log("IsOccupied");
                 FlipComponent();
             }
         }
