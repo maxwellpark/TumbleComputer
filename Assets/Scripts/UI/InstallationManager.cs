@@ -33,6 +33,27 @@ public class InstallationManager : MonoBehaviour
 
     //}
 
+    public static float GetYDelta()
+    {
+        switch (selectedPrefab.transform.tag)
+        {
+            case "Ramp":
+                return MachineConstants.rampYDelta;
+            case "Bit":
+                return MachineConstants.bitYDelta;
+            case "GearBit":
+                return MachineConstants.gearBitYDelta;
+            case "Gear":
+                return MachineConstants.gearYDelta;
+            case "Crossover":
+                return MachineConstants.crossoverYDelta;
+            case "Interceptor":
+                return MachineConstants.interceptorYDelta;
+            default:
+                return 0f; 
+        }
+    }
+
     private GameObject GetSelectedPrefab()
     {
         return selectedPrefab;

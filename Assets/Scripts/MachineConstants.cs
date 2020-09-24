@@ -6,7 +6,16 @@ public class MachineConstants : MonoBehaviour
 {
     // Coordinates at which balls will be released 
     public static Vector3 blueReleasePoint = new Vector3(0.5f, 3f, 0f);
-    public static Vector3 redReleasePoint = new Vector3(20f, 3f, 0f); 
+    public static Vector3 redReleasePoint = new Vector3(20f, 3f, 0f);
+
+    // Distance on y axis between nodes are their attached components,
+    // which varies component to component 
+    public static float rampYDelta = 0.75f;
+    public static float bitYDelta = 0.25f;
+    public static float gearBitYDelta = 0.75f;
+    public static float gearYDelta = 0.75f;
+    public static float crossoverYDelta = 0.75f;
+    public static float interceptorYDelta = 0.75f;
 
     // Spacing between nodes 
     public static float xSpacing = 3f; 

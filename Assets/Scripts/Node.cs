@@ -38,7 +38,7 @@ public class Node : MonoBehaviour, IPointerClickHandler
         //button = GetComponent<Button>(); 
         //AddListener();
         nodePosition = new Vector2(transform.position.x, transform.position.y);
-        newComponentPosition = new Vector2(transform.position.x, transform.position.y + yDelta);
+        //newComponentPosition = new Vector2(transform.position.x, transform.position.y + yDelta);
          
     }
 
@@ -69,15 +69,19 @@ public class Node : MonoBehaviour, IPointerClickHandler
 
             attachedComponent = Instantiate(InstallationManager.selectedPrefab, grid.transform);
             attachedComponent.name = InstallationManager.selectedPrefab.ToString();
-            Debug.Log("Newly installed component game object name: " + attachedComponent.name); 
+            Debug.Log("Newly installed component game object name: " + attachedComponent.name);
 
             // either parent to node or machine top-level
             // hierarchy may be less readable with node parent. 
 
             // do we need the instantiated object's position or the attached node position?
             // to add to the componentGrid?
-            attachedComponent.transform.position = newComponentPosition; 
 
+            // Y position is component type-specific 
+            attachedComponent.transform.position = new Vector3(transform.position.x, InstallationManager.GetYDelta(), 0f); 
+
+
+            //attachedComponent.transform.position = newComponentPosition; 
             //newComponent.transform.localPosition = Vector2.one;
 
         
