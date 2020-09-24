@@ -2,29 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// amalgamate with parent script? 
-// 
-// just get a reference to the trigger gameobject* 
-public class ToggleTrigger : MonoBehaviour
+public class BitTrigger : MonoBehaviour
 {
-    Toggle toggle; 
+    [SerializeField] private Bit bit; 
 
     void Start()
     {
-        toggle = GetComponentInParent<Toggle>(); 
+        //bit = GetComponentInParent<Bit>(); 
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Marble")
         {
-            StartCoroutine(ToggleDelay()); 
-            toggle.ToggleState(); 
+            bit.ToggleState(); 
         }
-    }
-
-    IEnumerator ToggleDelay()
-    {
-        yield return new WaitForSeconds(1); 
     }
 }

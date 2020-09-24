@@ -5,12 +5,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-// could change buttons to toggles, then when one is
-// pressed, toggle off all the others
-// (or at least the currently on toggle)
-// 
-// explain the need for this script and the Manager script 
-// separation of concerns/easier to get references*
 public class InstallationButton : MonoBehaviour
 {
     // The prefab of the component installed by this button
@@ -41,7 +35,6 @@ public class InstallationButton : MonoBehaviour
 
     public void SetAllButtonsInteractable()
     {
-        // change to exclude clicked btn?
         foreach (Button button in buttons)
         {
             button.interactable = true;
@@ -73,48 +66,33 @@ public class InstallationButton : MonoBehaviour
     public void ReduceButtonOpacity()
     {
         Image buttonImage = button.GetComponent<Image>();
-        //Color newColor = buttonImage.color;
         Color color = new Color(0f, 0f, 01f, 50f);
         buttonImage.color = color; 
         Debug.Log("Selected alppha = " + buttonImage.color.a);
     }
 
-    // rename to HandleButtonPress (act/deact combined) 
-    // or have separate Activate and Deactivate methods 
-    // and put inside a handler method 
     private void ButtonHandler()
     {
-        //    Debug.Log("ButtonHandler");
-        //    Debug.Log("Selected: " + selected);
-        //SetAllButtonsInteractable();
-        //button.interactable = false;
-
-        if (!selected)
-        {
-            Debug.Log("!selected, deselecting and changingbutton colour"); 
-            selected = true;
-            DeselectAllButtons();
-            ChangeButtonColour(button, MachineConstants.buttonSelectedColour); 
-            InstallationManager.installing = true;
-            InstallationManager.selectedPrefab = componentPrefab;
-        }
-        else
-        {
-            Debug.Log("selected, deselecting all"); 
-            DeselectAllButtons(); 
-            InstallationManager.installing = false;
-
-            // set to null or just leave as is? 
-            //InstallationManager.selectedPrefab = componentPrefab;
-        }
-
-        Debug.Log("Selected: " + selected);
-
-        //if (button.interactable)
+        Debug.Log("Selected = " + selected);
+        //if (!selected)
         //{
-        //    Debug.Log("Making interactable again"); 
-        //    button.interactable = true; 
+        //    Debug.Log("!selected, deselecting and changingbutton colour"); 
+        //    DeselectAllButtons();
+        //    selected = true;
+        //    ChangeButtonColour(button, MachineConstants.buttonSelectedColour); 
+        //    InstallationManager.installing = true;
+        //    InstallationManager.selectedPrefab = componentPrefab;
+        //}
+        //else
+        //{
+        //    Debug.Log("selected, deselecting all"); 
+        //    DeselectAllButtons();
         //    InstallationManager.installing = false;
         //}
+        DeselectAllButtons();
+        selected = true;
+        InstallationManager.selectedPrefab = componentPrefab;
+        InstallationManager.installing = true; 
+
     }
 }

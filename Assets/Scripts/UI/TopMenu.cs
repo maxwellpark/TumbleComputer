@@ -8,8 +8,8 @@ public class TopMenu : MonoBehaviour
 {
     public MachineBuilder machineBuilder; 
 
-    public GameObject grid; // naming convention 
-    public GameObject ballContainer; // don't need refs. in machineBUilder anymore! 
+    public GameObject grid; 
+    public GameObject ballContainer;  
     public GameObject componentContainer; 
     public GameObject blueBallPrefab; 
     public GameObject redBallPrefab;

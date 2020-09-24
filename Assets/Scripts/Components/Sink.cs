@@ -4,46 +4,28 @@ using UnityEngine;
 
 public class Sink : MonoBehaviour
 {
-    // make the spawnpoint dynamic 
-    private Vector3 spawnPoint = new Vector3(1.5f, 3f, 0f);
-
-    [SerializeField] private GameObject architecture;
-    [SerializeField] private GameObject entryPoint; // exit pt. doesn't work 
-    [SerializeField] private GameObject marblePrefab;
-
-    private int deadMarbles; 
-
-    // Start is called before the first frame update
-    void Start()
+    private enum BallColour
     {
-        architecture = gameObject.transform.parent.gameObject; 
-    }   
+        Blue = 0, Red = 1
+    }
+
+    [SerializeField] private BallColour ballColour;
+
+    [SerializeField] private GameObject ballContainer;
+    [SerializeField] private GameObject ballPrefab;
 
     private void RespawnMarble()
     {
-        Debug.Log("Respawn fired"); 
-        GameObject newMarble = Instantiate(marblePrefab);
-        newMarble.transform.parent = architecture.transform;
-        //newMarble.transform.position = spawnPoint; 
-
-        // place it above the ep 
-        newMarble.transform.position = entryPoint.transform.position + new Vector3(0f, 4f, 0f); 
+        GameObject newMarble = Instantiate(ballPrefab, ballContainer.transform);
+        newMarble.transform.position = ballColour == BallColour.Blue ?
+            MachineConstants.blueReleasePoint : MachineConstants.redReleasePoint;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Marble")
         {
-            Destroy(collision.gameObject);
-            deadMarbles++; 
-            Debug.Log($"Marble {deadMarbles} reached the sink.");
-            RespawnMarble(); 
+            RespawnMarble();
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
