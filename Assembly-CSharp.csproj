@@ -55,8 +55,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Components\BitTrigger.cs" />
-    <Compile Include="Assets\Scripts\Components\Toggle.cs" />
+    <Compile Include="Assets\Scripts\Components\Bit.cs" />
     <Compile Include="Assets\Scripts\Components\Sink.cs" />
     <Compile Include="Assets\Scripts\ScreenshotManager.cs" />
     <Compile Include="Assets\Scripts\UI\TopMenu.cs" />
@@ -65,15 +64,13 @@
     <Compile Include="Assets\Scripts\Components\GearBit.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\UI\TopButton.cs" />
-    <Compile Include="Assets\Scripts\Components\ToggleTrigger.cs" />
+    <Compile Include="Assets\Scripts\Components\BitTrigger.cs" />
     <Compile Include="Assets\Scripts\MachineConstants.cs" />
     <Compile Include="Assets\Scripts\MachineBuilder.cs" />
     <Compile Include="Assets\Scripts\UI\InstallationMenu.cs" />
-    <Compile Include="Assets\Constants\ComponentConstants.cs" />
-    <Compile Include="Assets\Scripts\Components\Bit.cs" />
+    <Compile Include="Assets\Scripts\Components\Ramp.cs" />
     <Compile Include="Assets\Scripts\Components\Ball.cs" />
     <Compile Include="Assets\Scripts\UI\InstallationManager.cs" />
-    <Compile Include="Assets\Scripts\Components\Ramp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

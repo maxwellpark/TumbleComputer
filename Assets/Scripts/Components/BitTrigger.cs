@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ToggleTrigger : MonoBehaviour
+public class BitTrigger : MonoBehaviour
 {
-    private Toggle toggle; 
+    [SerializeField] private Bit bit; 
 
     void Start()
     {
-        toggle = GetComponentInParent<Toggle>(); 
+        //bit = GetComponentInParent<Bit>(); 
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Marble")
         {
-            toggle.ToggleState(); 
+            bit.ToggleState(); 
         }
     }
 }
